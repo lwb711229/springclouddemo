@@ -9,6 +9,3 @@ mvn install
 
 
 
-github 账号
-username : lwb711229
-email    : l_wb1@163.com
