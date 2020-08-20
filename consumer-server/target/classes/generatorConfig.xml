@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--<properties resource="application-dev.properties"/>-->
+   <!-- <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">-->
+    <!-- 数据库驱动 -->
+    <classPathEntry location="D:/mysql-connector-java-5.1.25-bin.jar" />
+    <context id="Mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+
+        <plugin type="com.gcx.util.FindByRecord" />
+      <!--  <property name="useInformationSchema" value="true"/>-->
+
+        <!--指定生成的xxxMapper文件要继承的MyMapper类的路径-->
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.gcx.util.MyMapper"/>
+        </plugin>
+
+
+
+        <!--连接数据库-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://119.90.51.183:3306/usernew"
+                        userId="root"
+                        password="isoftadmin">
+        </jdbcConnection>
+
+
+        <!-- 对应生成的pojo所在包 -->
+        <javaModelGenerator targetPackage="com.gcx.model"
+                            targetProject="consumer-server/src/main/java"/>
+
+        <!-- 对应生成的mapper所在目录 -->
+        <sqlMapGenerator targetPackage="mapper"
+                         targetProject="consumer-server/src/main/resources"/>
+
+        <!-- 配置mapper对应的java映射 -->
+        <javaClientGenerator targetPackage="com.gcx.dao"
+                             targetProject="consumer-server/src/main/java"
+                             type="XMLMAPPER">
+        <property name="enableSubPackages" value="true" />
+
+    </javaClientGenerator>
+
+
+        <!--添加要生成的数据库对应表名-->
+        <table tableName="xiaoxi" domainObjectName="xiaoxi" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+            <!--mysql 配置-->
+           <!-- <generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+            <!--oracle 配置-->
+            <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
+
+        </table>
+
+    </context>
+</generatorConfiguration>
+

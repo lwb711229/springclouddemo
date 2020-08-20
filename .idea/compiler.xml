@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="producer-server" />
+        <module name="eureka-server" />
+        <module name="uuzl" />
+        <module name="consumer-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer-server" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="producer-server" target="1.8" />
+      <module name="springclouddemo" target="1.8" />
+      <module name="tutorial-stream-common" target="1.5" />
+      <module name="uuzl" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-server" options="-parameters -extdirs F:\gcx\springclouddemo\consumer-server/lib/CCP_REST_SMS_SDK_JAVA_v2.6.3r.jar" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="producer-server" options="-parameters" />
+      <module name="uuzl" options="-parameters" />
+    </option>
+  </component>
+</project>

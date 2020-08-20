@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.gcx.dao.Queryjson">
+	<resultMap id="BaseResultMap" type="com.gcx.model.NewsContent">
+		<id column="cid" property="cid" jdbcType="VARCHAR" />
+		   <result column="newtype" property="newtype" jdbcType="VARCHAR" />
+		    <result column="title" property="title" jdbcType="VARCHAR" />
+		    <result column="content" property="content" jdbcType="VARCHAR" />
+		    <result column="source" property="source" jdbcType="VARCHAR" />
+		    <result column="newstime" property="newstime" jdbcType="VARCHAR" />
+		    <result column="addtime" property="addtime" jdbcType="VARCHAR" />
+		    <result column="enclosuretype" property="enclosuretype" jdbcType="VARCHAR" />
+		    <result column="c1" property="c1" jdbcType="VARCHAR" />
+		    <result column="c2" property="c2" jdbcType="VARCHAR" />
+		    <result column="c3" property="c3" jdbcType="VARCHAR" />
+		    <result column="c4" property="c4" jdbcType="VARCHAR" />
+		    <result column="c5" property="c5" jdbcType="VARCHAR" />
+		    <result column="c6" property="c6" jdbcType="VARCHAR" />
+
+		<collection property="newsEnclosure" column="cid" ofType="com.gcx.model.NewsEnclosure">
+			<id column="eid" property="eid" jdbcType="VARCHAR" />
+			
+		    <result column="etype" property="etype" jdbcType="VARCHAR" />
+		    <result column="eurl" property="eurl" jdbcType="VARCHAR" />
+		   
+		</collection>
+
+	</resultMap>
+
+	<select id="getquery" resultMap="BaseResultMap">
+	
+	 SELECT m.*,c.etype,c.eurl from ( SELECT b.* from  news_type a, news_content b   where a.tid=b.newtype 
+	 and  a.firtitile =#{firtitile} and  a.sectitle like CONCAT('%',IFNULL(#{sectitle},''),'%') order by b.newstime desc limit #{pageNo},#{pageSize} ) m  LEFT JOIN  news_enclosure c on m.cid=c.cid
+	
+		
+	
+	</select>
+
+	<select id="queryByTitle" resultMap="BaseResultMap">
+	SELECT m.*,c.etype,c.eurl from ( SELECT b.* from  news_type a, news_content b   where a.tid=b.newtype 
+	 and  a.firtitile =#{firtitile} and  b.title like CONCAT('%',IFNULL(#{title},''),'%') order by b.newstime desc limit #{pageNo},#{pageSize} ) m  LEFT JOIN  news_enclosure c on m.cid=c.cid
+	</select>
+
+	
+</mapper>

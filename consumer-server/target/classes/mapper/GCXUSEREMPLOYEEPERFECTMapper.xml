@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gcx.dao.GCXUSEREMPLOYEEPERFECTMapper">
+  <resultMap id="BaseResultMap" type="com.gcx.model.GCXUSEREMPLOYEEPERFECT">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="EMP_ID" jdbcType="DECIMAL" property="empId" />
+    <result column="EMP_NAME" jdbcType="VARCHAR" property="empName" />
+    <result column="ID_NUMBER" jdbcType="VARCHAR" property="idNumber" />
+    <result column="PHONENUM" jdbcType="VARCHAR" property="phonenum" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="GENDER" jdbcType="VARCHAR" property="gender" />
+    <result column="ADDRESS" jdbcType="VARCHAR" property="address" />
+    <result column="ADDRESS_ID" jdbcType="VARCHAR" property="addressId" />
+    <result column="ADDRESS_DETAIL" jdbcType="VARCHAR" property="addressDetail" />
+    <result column="ID_FORNT" jdbcType="VARCHAR" property="idFornt" />
+    <result column="ID_BACK" jdbcType="VARCHAR" property="idBack" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="START_DATE" jdbcType="VARCHAR" property="startDate" />
+    <result column="END_DATE" jdbcType="VARCHAR" property="endDate" />
+    <result column="AUDIT_NAME" jdbcType="VARCHAR" property="auditName" />
+    <result column="AUDIT_TIME" jdbcType="VARCHAR" property="auditTime" />
+    <result column="DELETE_FLAG" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="Z1" jdbcType="VARCHAR" property="z1" />
+    <result column="Z2" jdbcType="VARCHAR" property="z2" />
+    <result column="Z3" jdbcType="VARCHAR" property="z3" />
+    <result column="Z4" jdbcType="VARCHAR" property="z4" />
+    <result column="Z5" jdbcType="VARCHAR" property="z5" />
+    <result column="Z6" jdbcType="VARCHAR" property="z6" />
+    <result column="Z7" jdbcType="VARCHAR" property="z7" />
+    <result column="Z8" jdbcType="VARCHAR" property="z8" />
+    <result column="Z9" jdbcType="VARCHAR" property="z9" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    EMP_ID, EMP_NAME, ID_NUMBER, PHONENUM, EMAIL, GENDER, ADDRESS, ADDRESS_ID, ADDRESS_DETAIL, 
+    ID_FORNT, ID_BACK, STATUS, START_DATE, END_DATE, AUDIT_NAME, AUDIT_TIME, DELETE_FLAG, 
+    Z1, Z2, Z3, Z4, Z5, Z6, Z7, Z8, Z9
+  </sql>
+  <select id="findByRecord" resultMap="BaseResultMap">
+    select <include refid='Base_Column_List' /> from GCX_USER_EMPLOYEE_PERFECT where 1 = 1 <if test='record.empId != null and record.empId != "" '> and EMP_ID = #{record.empId,jdbcType=DECIMAL} </if><if test='record.empName != null and record.empName != "" '> and EMP_NAME = #{record.empName,jdbcType=VARCHAR} </if><if test='record.idNumber != null and record.idNumber != "" '> and ID_NUMBER = #{record.idNumber,jdbcType=VARCHAR} </if><if test='record.phonenum != null and record.phonenum != "" '> and PHONENUM = #{record.phonenum,jdbcType=VARCHAR} </if><if test='record.email != null and record.email != "" '> and EMAIL = #{record.email,jdbcType=VARCHAR} </if><if test='record.gender != null and record.gender != "" '> and GENDER = #{record.gender,jdbcType=VARCHAR} </if><if test='record.address != null and record.address != "" '> and ADDRESS = #{record.address,jdbcType=VARCHAR} </if><if test='record.addressId != null and record.addressId != "" '> and ADDRESS_ID = #{record.addressId,jdbcType=VARCHAR} </if><if test='record.addressDetail != null and record.addressDetail != "" '> and ADDRESS_DETAIL = #{record.addressDetail,jdbcType=VARCHAR} </if><if test='record.idFornt != null and record.idFornt != "" '> and ID_FORNT = #{record.idFornt,jdbcType=VARCHAR} </if><if test='record.idBack != null and record.idBack != "" '> and ID_BACK = #{record.idBack,jdbcType=VARCHAR} </if><if test='record.status != null and record.status != "" '> and STATUS = #{record.status,jdbcType=VARCHAR} </if><if test='record.startDate != null and record.startDate != "" '> and START_DATE = #{record.startDate,jdbcType=VARCHAR} </if><if test='record.endDate != null and record.endDate != "" '> and END_DATE = #{record.endDate,jdbcType=VARCHAR} </if><if test='record.auditName != null and record.auditName != "" '> and AUDIT_NAME = #{record.auditName,jdbcType=VARCHAR} </if><if test='record.auditTime != null and record.auditTime != "" '> and AUDIT_TIME = #{record.auditTime,jdbcType=VARCHAR} </if><if test='record.deleteFlag != null and record.deleteFlag != "" '> and DELETE_FLAG = #{record.deleteFlag,jdbcType=INTEGER} </if><if test='record.z1 != null and record.z1 != "" '> and Z1 = #{record.z1,jdbcType=VARCHAR} </if><if test='record.z2 != null and record.z2 != "" '> and Z2 = #{record.z2,jdbcType=VARCHAR} </if><if test='record.z3 != null and record.z3 != "" '> and Z3 = #{record.z3,jdbcType=VARCHAR} </if><if test='record.z4 != null and record.z4 != "" '> and Z4 = #{record.z4,jdbcType=VARCHAR} </if><if test='record.z5 != null and record.z5 != "" '> and Z5 = #{record.z5,jdbcType=VARCHAR} </if><if test='record.z6 != null and record.z6 != "" '> and Z6 = #{record.z6,jdbcType=VARCHAR} </if><if test='record.z7 != null and record.z7 != "" '> and Z7 = #{record.z7,jdbcType=VARCHAR} </if><if test='record.z8 != null and record.z8 != "" '> and Z8 = #{record.z8,jdbcType=VARCHAR} </if><if test='record.z9 != null and record.z9 != "" '> and Z9 = #{record.z9,jdbcType=VARCHAR} </if>
+  </select>
+</mapper>

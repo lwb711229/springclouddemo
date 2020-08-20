@@ -1,0 +1,522 @@
+2020-07-14 00:03:14.952 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:08:15.281 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:13:15.287 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:18:15.292 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:23:15.352 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:28:15.391 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:33:15.396 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:38:15.434 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:43:15.439 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:48:15.444 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:53:15.479 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 00:58:15.495 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:03:15.500 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:03:24.832 WARN [DiscoveryClient-CacheRefreshExecutor-0]c.n.d.s.transport.decorator.RetryableEurekaHttpClient.execute:130 -Request execution failed with message: java.net.SocketTimeoutException: Read timed out
+2020-07-14 01:03:29.243 INFO [DiscoveryClient-CacheRefreshExecutor-0]c.n.d.s.transport.decorator.RetryableEurekaHttpClient.execute:124 -Request execution succeeded on retry #1
+2020-07-14 01:08:15.504 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:13:15.510 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:18:15.515 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:23:15.520 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:28:15.653 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:33:15.657 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:38:15.662 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:43:15.668 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:48:15.672 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:53:15.679 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 01:58:15.686 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 02:03:15.691 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 02:06:31.214 INFO [Thread-105]com.netflix.loadbalancer.PollingServerListUpdater.run:53 -Shutting down the Executor Pool for PollingServerListUpdater
+2020-07-14 02:06:31.896 INFO [Thread-89]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73d69c0f: startup date [Mon Jul 13 20:16:45 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@767e20cf
+2020-07-14 02:06:32.448 INFO [Thread-89]o.s.c.n.eureka.serviceregistry.EurekaServiceRegistry.deregister:65 -Unregistering application consumer-server with eureka with status DOWN
+2020-07-14 02:06:32.487 WARN [Thread-89]com.netflix.discovery.DiscoveryClient.notify:1297 -Saw local status change event StatusChangeEvent [timestamp=1594663592487, current=DOWN, previous=UP]
+2020-07-14 02:06:32.552 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:826 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900: registering service...
+2020-07-14 02:06:33.689 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:835 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900 - registration status: 204
+2020-07-14 02:06:36.434 INFO [Thread-89]o.s.context.support.DefaultLifecycleProcessor.stop:366 -Stopping beans in phase 2147483647
+2020-07-14 02:06:36.860 INFO [Thread-89]o.s.context.support.DefaultLifecycleProcessor.stop:366 -Stopping beans in phase 0
+2020-07-14 02:06:37.199 INFO [Thread-89]o.s.cloud.netflix.zuul.ZuulFilterInitializer.contextDestroyed:77 -Stopping filter initializer
+2020-07-14 02:06:37.812 INFO [Thread-89]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2020-07-14 02:06:37.864 INFO [Thread-89]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2020-07-14 02:06:38.178 WARN [DiscoveryClient-CacheRefreshExecutor-0]c.n.d.s.transport.decorator.RetryableEurekaHttpClient.execute:130 -Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-07-14 02:06:39.971 INFO [Thread-89]o.s.c.annotation.AnnotationConfigApplicationContext.doClose:993 -Closing FeignContext-producer-server: startup date [Mon Jul 13 20:17:08 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@73d69c0f
+2020-07-14 02:06:40.252 WARN [DiscoveryClient-CacheRefreshExecutor-0]c.n.d.s.transport.decorator.RetryableEurekaHttpClient.execute:130 -Request execution failed with message: java.net.ConnectException: Connection refused: connect
+2020-07-14 21:30:23.428 INFO [main]o.s.c.annotation.AnnotationConfigApplicationContext.prepareRefresh:590 -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@76ed1b7c: startup date [Tue Jul 14 21:30:23 CST 2020]; root of context hierarchy
+2020-07-14 21:30:25.340 INFO [main]o.s.b.f.annotation.AutowiredAnnotationBeanPostProcessor.<init>:154 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-07-14 21:30:25.658 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87401546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 21:30:32.407 INFO [main]com.gcx.ConsumerServerApplication.logStartupProfileInfo:663 -The following profiles are active: dev
+2020-07-14 21:30:32.527 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@130dca52: startup date [Tue Jul 14 21:30:32 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@76ed1b7c
+2020-07-14 21:30:40.540 WARN [main]tk.mybatis.spring.mapper.ClassPathMapperScanner.doScan:142 -No MyBatis mapper was found in '[com.gcx]' package. Please check your configuration.
+2020-07-14 21:30:40.623 WARN [main]org.mybatis.spring.mapper.ClassPathMapperScanner.warn:44 -No MyBatis mapper was found in '[com.gcx]' package. Please check your configuration.
+2020-07-14 21:30:41.212 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:163 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-14 21:30:42.649 INFO [main]o.s.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition:824 -Overriding bean definition for bean 'proxyRequestHelper' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration$EndpointConfiguration; factoryMethodName=proxyRequestHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration$NoActuatorConfiguration; factoryMethodName=proxyRequestHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class]]
+2020-07-14 21:30:42.663 INFO [main]o.s.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition:824 -Overriding bean definition for bean 'counterFactory' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulMetricsConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulMetricsConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration.class]]
+2020-07-14 21:30:43.330 INFO [main]o.s.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition:824 -Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-07-14 21:30:44.652 INFO [main]org.springframework.cloud.context.scope.GenericScope.setSerializationId:294 -BeanFactory id=5c6d9c20-596b-3b8d-ae0c-498b349134ab
+2020-07-14 21:30:44.929 INFO [main]o.s.b.f.annotation.AutowiredAnnotationBeanPostProcessor.<init>:154 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-07-14 21:30:46.947 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b261249] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 21:30:48.898 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87401546] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 21:30:50.555 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8900 (http)
+2020-07-14 21:30:50.620 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:30:50.663 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2020-07-14 21:30:50.664 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-07-14 21:30:50.768 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+2020-07-14 21:30:51.210 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2020-07-14 21:30:51.211 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 18684 ms
+2020-07-14 21:30:52.016 WARN [localhost-startStop-1]com.netflix.config.sources.URLConfigurationSource.<init>:121 -No URLs will be polled as dynamic configuration sources.
+2020-07-14 21:30:52.017 INFO [localhost-startStop-1]com.netflix.config.sources.URLConfigurationSource.<init>:122 -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-14 21:30:52.091 INFO [localhost-startStop-1]com.netflix.config.DynamicPropertyFactory.getInstance:281 -DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@20c49e60
+2020-07-14 21:30:59.006 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:175 -no modules loaded
+2020-07-14 21:30:59.009 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-07-14 21:30:59.009 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-07-14 21:30:59.010 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-07-14 21:30:59.011 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-07-14 21:30:59.011 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2020-07-14 21:30:59.012 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-07-14 21:31:22.126 INFO [localhost-startStop-1]io.netty.util.internal.PlatformDependent.info:104 -Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2020-07-14 21:31:38.672 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 21:31:38.673 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'tracingFilter' to: [/*]
+2020-07-14 21:31:38.674 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-07-14 21:31:38.674 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 21:31:38.675 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 21:31:38.675 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 21:31:38.675 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'httpTraceFilter' to: [/*]
+2020-07-14 21:31:38.676 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-07-14 21:31:38.676 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:186 -Servlet dispatcherServlet mapped to [/]
+2020-07-14 21:31:38.678 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:186 -Servlet zuulServlet mapped to [/zuul/*]
+2020-07-14 21:31:41.647 INFO [main]o.s.c.annotation.AnnotationConfigApplicationContext.prepareRefresh:590 -Refreshing FeignContext-producer-server: startup date [Tue Jul 14 21:31:41 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@130dca52
+2020-07-14 21:31:41.675 INFO [main]o.s.b.f.annotation.AutowiredAnnotationBeanPostProcessor.<init>:154 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-07-14 21:31:42.591 INFO [main]o.s.cloud.netflix.eureka.InstanceInfoFactory.create:71 -Setting initial instance status as: STARTING
+2020-07-14 21:31:42.712 INFO [main]com.netflix.discovery.DiscoveryClient.<init>:349 -Initializing Eureka in region us-east-1
+2020-07-14 21:31:43.221 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:70 -Using JSON encoding codec LegacyJacksonJson
+2020-07-14 21:31:43.222 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:71 -Using JSON decoding codec LegacyJacksonJson
+2020-07-14 21:31:43.402 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:80 -Using XML encoding codec XStreamXml
+2020-07-14 21:31:43.403 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:81 -Using XML decoding codec XStreamXml
+2020-07-14 21:31:43.842 INFO [main]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 21:31:44.234 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:958 -Disable delta property : false
+2020-07-14 21:31:44.236 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:959 -Single vip registry refresh property : null
+2020-07-14 21:31:44.237 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:960 -Force full registry fetch : false
+2020-07-14 21:31:44.238 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:961 -Application is null : false
+2020-07-14 21:31:44.238 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:962 -Registered Applications size is zero : true
+2020-07-14 21:31:44.239 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:964 -Application version is -1: true
+2020-07-14 21:31:44.240 INFO [main]com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry:1047 -Getting all instance registry info from the eureka server
+2020-07-14 21:31:44.632 INFO [main]com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry:1056 -The response status is 200
+2020-07-14 21:31:44.641 INFO [main]com.netflix.discovery.DiscoveryClient.initScheduledTasks:1264 -Starting heartbeat executor: renew interval is: 30
+2020-07-14 21:31:44.646 INFO [main]com.netflix.discovery.InstanceInfoReplicator.<init>:60 -InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-14 21:31:44.655 INFO [main]com.netflix.discovery.DiscoveryClient.<init>:449 -Discovery Client initialized at timestamp 1594733504653 with initial instances count: 1
+2020-07-14 21:31:48.091 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/userinfo.do]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.userinfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-07-14 21:31:48.093 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/sendMessage.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.sendMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-07-14 21:31:48.095 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/addRecord.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.addRecord(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:31:48.096 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/userLogin.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:31:48.097 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/modpassword.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.modpassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:31:48.098 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/yzmLogin.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.modpassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-07-14 21:31:48.100 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/wjpassword.do]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.wjpassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:31:48.101 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/checkTel.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.checkTel(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-07-14 21:31:48.102 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/looktelyzm.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.looktelyzm(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-07-14 21:31:48.103 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/getPicCheckCode.do],methods=[GET]}" onto public void com.gcx.control.InformationController.getPicCheckCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:31:48.105 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/order/{id}],methods=[GET]}" onto public java.lang.String com.gcx.control.ordercontrol.order(long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:31:48.106 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/hello/{name}]}" onto public java.lang.String com.gcx.control.ordercontrol.index(java.lang.String)
+2020-07-14 21:31:48.107 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.gcx.control.ordercontrol.test(long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:31:48.108 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/getPicCheckCode]}" onto public void com.gcx.control.ordercontrol.getPicCheckCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:31:48.116 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-07-14 21:31:48.117 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-07-14 21:31:48.119 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-07-14 21:31:48.124 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 21:31:48.126 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:31:48.419 INFO [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:59 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-14 21:31:48.449 INFO [main]o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping.register:547 -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-07-14 21:31:48.452 INFO [main]o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping.register:547 -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-07-14 21:31:48.454 INFO [main]o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping.register:547 -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:31:49.358 INFO [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-07-14 21:31:49.841 WARN [main]com.netflix.config.sources.URLConfigurationSource.<init>:121 -No URLs will be polled as dynamic configuration sources.
+2020-07-14 21:31:49.842 INFO [main]com.netflix.config.sources.URLConfigurationSource.<init>:122 -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-14 21:31:50.110 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 21:31:51.170 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@130dca52: startup date [Tue Jul 14 21:30:32 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@76ed1b7c
+2020-07-14 21:31:51.334 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 21:31:51.335 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 21:31:51.546 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-14 21:31:51.548 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-14 21:31:51.549 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-14 21:31:51.549 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache:83 -Clear EntityHelper entityTableMap cache.
+2020-07-14 21:31:58.428 INFO [main]o.s.cloud.netflix.zuul.ZuulFilterInitializer.contextInitialized:65 -Starting filter initializer
+2020-07-14 21:31:58.708 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2020-07-14 21:31:58.712 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-07-14 21:31:58.729 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-07-14 21:31:58.733 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-07-14 21:31:58.735 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-07-14 21:31:58.748 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:675 -Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-07-14 21:31:58.766 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:675 -Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-07-14 21:31:58.786 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:675 -Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=130dca52,type=ConfigurationPropertiesRebinder]
+2020-07-14 21:31:58.802 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-07-14 21:31:58.821 INFO [main]o.s.context.support.DefaultLifecycleProcessor.start:351 -Starting beans in phase 0
+2020-07-14 21:31:58.822 INFO [main]o.s.c.n.eureka.serviceregistry.EurekaServiceRegistry.register:42 -Registering application consumer-server with eureka with status UP
+2020-07-14 21:31:58.823 INFO [main]com.netflix.discovery.DiscoveryClient.notify:1299 -Saw local status change event StatusChangeEvent [timestamp=1594733518823, current=UP, previous=STARTING]
+2020-07-14 21:31:58.825 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:826 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900: registering service...
+2020-07-14 21:31:58.830 INFO [main]o.s.context.support.DefaultLifecycleProcessor.start:351 -Starting beans in phase 2147483647
+2020-07-14 21:31:58.831 INFO [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-07-14 21:31:58.876 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:835 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900 - registration status: 204
+2020-07-14 21:32:02.471 INFO [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-07-14 21:32:04.287 INFO [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-07-14 21:32:20.338 INFO [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: modpasswordUsingGET_1
+2020-07-14 21:32:20.399 INFO [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getPicCheckCodeUsingGET_1
+2020-07-14 21:32:22.010 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:32:22.012 INFO [main]org.apache.tomcat.util.net.NioSelectorPool.log:180 -Using a shared selector for servlet write/read
+2020-07-14 21:32:22.042 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:206 -Tomcat started on port(s): 8900 (http) with context path ''
+2020-07-14 21:32:22.045 INFO [main]o.s.c.n.e.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent:124 -Updating port to 8900
+2020-07-14 21:32:22.049 INFO [main]com.gcx.ConsumerServerApplication.logStarted:59 -Started ConsumerServerApplication in 125.537 seconds (JVM running for 132.845)
+2020-07-14 21:32:22.689 INFO [RMI TCP Connection(7)-192.168.1.7]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-07-14 21:32:22.690 INFO [RMI TCP Connection(7)-192.168.1.7]org.springframework.web.servlet.DispatcherServlet.initServletBean:494 -FrameworkServlet 'dispatcherServlet': initialization started
+2020-07-14 21:32:23.008 INFO [RMI TCP Connection(6)-192.168.1.7]com.zaxxer.hikari.HikariDataSource.getConnection:110 -HikariPool-1 - Starting...
+2020-07-14 21:32:24.659 INFO [RMI TCP Connection(7)-192.168.1.7]org.springframework.web.servlet.DispatcherServlet.initServletBean:509 -FrameworkServlet 'dispatcherServlet': initialization completed in 1968 ms
+2020-07-14 21:32:35.422 INFO [RMI TCP Connection(6)-192.168.1.7]com.zaxxer.hikari.HikariDataSource.getConnection:123 -HikariPool-1 - Start completed.
+2020-07-14 21:32:47.473 WARN [RMI TCP Connection(6)-192.168.1.7]o.s.b.actuate.elasticsearch.ElasticsearchHealthIndicator.health:89 -Elasticsearch health check failed
+org.elasticsearch.ElasticsearchTimeoutException: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:71)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:58)
+	at org.springframework.boot.actuate.elasticsearch.ElasticsearchHealthIndicator.doHealthCheck(ElasticsearchHealthIndicator.java:80)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:84)
+	at org.springframework.boot.actuate.health.CompositeHealthIndicator.health(CompositeHealthIndicator.java:68)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:223)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:76)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:61)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:126)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:99)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.TimeoutException: Timeout waiting for task.
+	at org.elasticsearch.common.util.concurrent.BaseFuture$Sync.get(BaseFuture.java:232)
+	at org.elasticsearch.common.util.concurrent.BaseFuture.get(BaseFuture.java:67)
+	at org.elasticsearch.action.support.AdapterActionFuture.actionGet(AdapterActionFuture.java:69)
+	... 38 common frames omitted
+2020-07-14 21:32:47.635 INFO [RMI TCP Connection(6)-192.168.1.7]io.lettuce.core.EpollProvider.info:104 -Starting without optional epoll library
+2020-07-14 21:32:47.638 INFO [RMI TCP Connection(6)-192.168.1.7]io.lettuce.core.KqueueProvider.info:104 -Starting without optional kqueue library
+2020-07-14 21:36:44.249 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 21:38:33.534 INFO [main]o.s.c.annotation.AnnotationConfigApplicationContext.prepareRefresh:590 -Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21b2e768: startup date [Tue Jul 14 21:38:33 CST 2020]; root of context hierarchy
+2020-07-14 21:38:35.111 INFO [main]o.s.b.f.annotation.AutowiredAnnotationBeanPostProcessor.<init>:154 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-07-14 21:38:35.823 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b630c76f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 21:38:37.356 INFO [main]com.gcx.ConsumerServerApplication.logStartupProfileInfo:663 -The following profiles are active: dev
+2020-07-14 21:38:37.458 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.prepareRefresh:590 -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@674658f7: startup date [Tue Jul 14 21:38:37 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21b2e768
+2020-07-14 21:38:43.187 WARN [main]tk.mybatis.spring.mapper.ClassPathMapperScanner.doScan:142 -No MyBatis mapper was found in '[com.gcx]' package. Please check your configuration.
+2020-07-14 21:38:43.379 WARN [main]org.mybatis.spring.mapper.ClassPathMapperScanner.warn:44 -No MyBatis mapper was found in '[com.gcx]' package. Please check your configuration.
+2020-07-14 21:38:45.400 INFO [main]o.s.d.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected:163 -Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-14 21:38:46.092 INFO [main]o.s.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition:824 -Overriding bean definition for bean 'proxyRequestHelper' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration$EndpointConfiguration; factoryMethodName=proxyRequestHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulProxyAutoConfiguration$NoActuatorConfiguration; factoryMethodName=proxyRequestHelper; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class]]
+2020-07-14 21:38:46.135 INFO [main]o.s.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition:824 -Overriding bean definition for bean 'counterFactory' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulMetricsConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulMetricsConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulServerAutoConfiguration$ZuulCounterFactoryConfiguration.class]]
+2020-07-14 21:38:46.580 INFO [main]o.s.beans.factory.support.DefaultListableBeanFactory.registerBeanDefinition:824 -Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-07-14 21:38:47.583 INFO [main]org.springframework.cloud.context.scope.GenericScope.setSerializationId:294 -BeanFactory id=7465edb3-9fe6-34a6-a610-afc5aa083d23
+2020-07-14 21:38:47.687 INFO [main]o.s.b.f.annotation.AutowiredAnnotationBeanPostProcessor.<init>:154 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-07-14 21:38:49.122 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9a16c472] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 21:38:49.600 INFO [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:328 -Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b630c76f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-14 21:38:54.369 INFO [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:91 -Tomcat initialized with port(s): 8900 (http)
+2020-07-14 21:38:54.512 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Initializing ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:38:54.642 INFO [main]org.apache.catalina.core.StandardService.log:180 -Starting service [Tomcat]
+2020-07-14 21:38:54.643 INFO [main]org.apache.catalina.core.StandardEngine.log:180 -Starting Servlet Engine: Apache Tomcat/8.5.31
+2020-07-14 21:38:54.697 INFO [localhost-startStop-1]org.apache.catalina.core.AprLifecycleListener.log:180 -The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+2020-07-14 21:38:56.167 INFO [localhost-startStop-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:180 -Initializing Spring embedded WebApplicationContext
+2020-07-14 21:38:56.168 INFO [localhost-startStop-1]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:285 -Root WebApplicationContext: initialization completed in 18710 ms
+2020-07-14 21:38:59.315 WARN [localhost-startStop-1]com.netflix.config.sources.URLConfigurationSource.<init>:121 -No URLs will be polled as dynamic configuration sources.
+2020-07-14 21:38:59.315 INFO [localhost-startStop-1]com.netflix.config.sources.URLConfigurationSource.<init>:122 -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-14 21:38:59.790 INFO [localhost-startStop-1]com.netflix.config.DynamicPropertyFactory.getInstance:281 -DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7647069
+2020-07-14 21:39:12.402 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:175 -no modules loaded
+2020-07-14 21:39:12.405 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-07-14 21:39:12.405 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-07-14 21:39:12.406 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-07-14 21:39:12.406 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-07-14 21:39:12.407 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.transport.Netty3Plugin]
+2020-07-14 21:39:12.408 INFO [localhost-startStop-1]org.elasticsearch.plugins.PluginsService.logPluginInfo:178 -loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-07-14 21:39:25.126 INFO [localhost-startStop-1]io.netty.util.internal.PlatformDependent.info:104 -Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system instability.
+2020-07-14 21:39:39.919 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-07-14 21:39:39.920 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'tracingFilter' to: [/*]
+2020-07-14 21:39:39.921 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-07-14 21:39:39.921 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-07-14 21:39:39.922 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-07-14 21:39:39.923 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'requestContextFilter' to: [/*]
+2020-07-14 21:39:39.923 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'httpTraceFilter' to: [/*]
+2020-07-14 21:39:39.925 INFO [localhost-startStop-1]o.s.boot.web.servlet.FilterRegistrationBean.configure:245 -Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2020-07-14 21:39:39.926 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:186 -Servlet dispatcherServlet mapped to [/]
+2020-07-14 21:39:39.928 INFO [localhost-startStop-1]o.s.boot.web.servlet.ServletRegistrationBean.addRegistration:186 -Servlet zuulServlet mapped to [/zuul/*]
+2020-07-14 21:39:44.735 INFO [main]o.s.c.annotation.AnnotationConfigApplicationContext.prepareRefresh:590 -Refreshing FeignContext-producer-server: startup date [Tue Jul 14 21:39:44 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@674658f7
+2020-07-14 21:39:44.761 INFO [main]o.s.b.f.annotation.AutowiredAnnotationBeanPostProcessor.<init>:154 -JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-07-14 21:39:45.411 INFO [main]o.s.cloud.netflix.eureka.InstanceInfoFactory.create:71 -Setting initial instance status as: STARTING
+2020-07-14 21:39:45.625 INFO [main]com.netflix.discovery.DiscoveryClient.<init>:349 -Initializing Eureka in region us-east-1
+2020-07-14 21:39:47.428 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:70 -Using JSON encoding codec LegacyJacksonJson
+2020-07-14 21:39:47.429 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:71 -Using JSON decoding codec LegacyJacksonJson
+2020-07-14 21:39:48.246 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:80 -Using XML encoding codec XStreamXml
+2020-07-14 21:39:48.247 INFO [main]com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>:81 -Using XML decoding codec XStreamXml
+2020-07-14 21:39:49.196 INFO [main]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 21:39:49.640 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:958 -Disable delta property : false
+2020-07-14 21:39:49.640 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:959 -Single vip registry refresh property : null
+2020-07-14 21:39:49.641 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:960 -Force full registry fetch : false
+2020-07-14 21:39:49.641 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:961 -Application is null : false
+2020-07-14 21:39:49.642 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:962 -Registered Applications size is zero : true
+2020-07-14 21:39:49.642 INFO [main]com.netflix.discovery.DiscoveryClient.fetchRegistry:964 -Application version is -1: true
+2020-07-14 21:39:49.643 INFO [main]com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry:1047 -Getting all instance registry info from the eureka server
+2020-07-14 21:39:50.390 INFO [main]com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry:1056 -The response status is 200
+2020-07-14 21:39:50.401 INFO [main]com.netflix.discovery.DiscoveryClient.initScheduledTasks:1264 -Starting heartbeat executor: renew interval is: 30
+2020-07-14 21:39:50.412 INFO [main]com.netflix.discovery.InstanceInfoReplicator.<init>:60 -InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-14 21:39:50.477 INFO [main]com.netflix.discovery.DiscoveryClient.<init>:449 -Discovery Client initialized at timestamp 1594733990424 with initial instances count: 3
+2020-07-14 21:39:54.036 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/addRecord.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.addRecord(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:39:54.042 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/userLogin.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.userLogin(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:39:54.043 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/modpassword.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.modpassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:39:54.044 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/yzmLogin.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.modpassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-07-14 21:39:54.044 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/wjpassword.do]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.wjpassword(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String,java.lang.String)
+2020-07-14 21:39:54.045 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/checkTel.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.checkTel(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-07-14 21:39:54.046 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/looktelyzm.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.looktelyzm(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2020-07-14 21:39:54.047 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/getPicCheckCode.do],methods=[GET]}" onto public void com.gcx.control.InformationController.getPicCheckCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:39:54.048 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/sendMessage.do],methods=[GET]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.sendMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-07-14 21:39:54.050 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/informationController/userinfo.do]}" onto public com.gcx.util.MyResult<java.lang.Object> com.gcx.control.InformationController.userinfo(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2020-07-14 21:39:54.057 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/order/{id}],methods=[GET]}" onto public java.lang.String com.gcx.control.ordercontrol.order(long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:39:54.063 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/hello/{name}]}" onto public java.lang.String com.gcx.control.ordercontrol.index(java.lang.String)
+2020-07-14 21:39:54.065 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.gcx.control.ordercontrol.test(long,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:39:54.067 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/getPicCheckCode]}" onto public void com.gcx.control.ordercontrol.getPicCheckCode(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:39:54.073 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-07-14 21:39:54.075 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-07-14 21:39:54.077 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-07-14 21:39:54.081 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-07-14 21:39:54.083 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerMapping.register:547 -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:39:54.516 INFO [main]o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:59 -Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-14 21:39:54.544 INFO [main]o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping.register:547 -Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-07-14 21:39:54.548 INFO [main]o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping.register:547 -Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-07-14 21:39:54.552 INFO [main]o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping.register:547 -Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-07-14 21:39:55.208 INFO [main]s.d.s.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods:69 -Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-07-14 21:39:55.620 WARN [main]com.netflix.config.sources.URLConfigurationSource.<init>:121 -No URLs will be polled as dynamic configuration sources.
+2020-07-14 21:39:55.620 INFO [main]com.netflix.config.sources.URLConfigurationSource.<init>:122 -To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-14 21:39:55.859 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 21:39:58.283 INFO [main]o.s.w.s.m.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache:574 -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@674658f7: startup date [Tue Jul 14 21:38:37 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21b2e768
+2020-07-14 21:39:58.692 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 21:39:58.692 INFO [main]o.s.web.servlet.handler.SimpleUrlHandlerMapping.registerHandler:373 -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-07-14 21:39:59.240 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-07-14 21:39:59.242 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-07-14 21:39:59.243 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeStaticCache:60 -Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-07-14 21:39:59.277 INFO [main]tk.mybatis.mapper.autoconfigure.MapperCacheDisabler.removeEntityHelperCache:83 -Clear EntityHelper entityTableMap cache.
+2020-07-14 21:40:05.277 INFO [main]o.s.cloud.netflix.zuul.ZuulFilterInitializer.contextInitialized:65 -Starting filter initializer
+2020-07-14 21:40:05.541 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.afterSingletonsInstantiated:433 -Registering beans for JMX exposure on startup
+2020-07-14 21:40:05.547 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-07-14 21:40:05.564 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-07-14 21:40:05.570 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-07-14 21:40:05.572 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.autodetect:895 -Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-07-14 21:40:05.581 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:675 -Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-07-14 21:40:05.606 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:675 -Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-07-14 21:40:05.644 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:675 -Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=674658f7,type=ConfigurationPropertiesRebinder]
+2020-07-14 21:40:05.663 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.registerBeanInstance:668 -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-07-14 21:40:05.740 INFO [main]o.s.context.support.DefaultLifecycleProcessor.start:351 -Starting beans in phase 0
+2020-07-14 21:40:05.741 INFO [main]o.s.c.n.eureka.serviceregistry.EurekaServiceRegistry.register:42 -Registering application consumer-server with eureka with status UP
+2020-07-14 21:40:05.742 INFO [main]com.netflix.discovery.DiscoveryClient.notify:1299 -Saw local status change event StatusChangeEvent [timestamp=1594734005742, current=UP, previous=STARTING]
+2020-07-14 21:40:05.749 INFO [main]o.s.context.support.DefaultLifecycleProcessor.start:351 -Starting beans in phase 2147483647
+2020-07-14 21:40:05.749 INFO [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:160 -Context refreshed
+2020-07-14 21:40:05.765 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:826 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900: registering service...
+2020-07-14 21:40:05.827 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:835 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900 - registration status: 204
+2020-07-14 21:40:05.905 INFO [main]s.d.spring.web.plugins.DocumentationPluginsBootstrapper.start:163 -Found 1 custom documentation plugin(s)
+2020-07-14 21:40:06.296 INFO [main]s.d.spring.web.scanners.ApiListingReferenceScanner.scan:41 -Scanning for api listing references
+2020-07-14 21:40:10.148 INFO [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: modpasswordUsingGET_1
+2020-07-14 21:40:10.295 INFO [main]s.d.s.w.readers.operation.CachingOperationNameGenerator.startingWith:40 -Generating unique operation named: getPicCheckCodeUsingGET_1
+2020-07-14 21:40:10.593 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Starting ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:40:10.789 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Pausing ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:40:10.790 INFO [main]org.apache.catalina.core.StandardService.log:180 -Stopping service [Tomcat]
+2020-07-14 21:40:10.908 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7ffddc88}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:257)
+ zipkin2.reporter.AsyncReporter$Builder$1.run(AsyncReporter.java:190)
+2020-07-14 21:40:10.909 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.910 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:40)
+2020-07-14 21:40:10.911 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][[timer]]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ org.elasticsearch.threadpool.ThreadPool$CachedTimeThread.run(ThreadPool.java:536)
+2020-07-14 21:40:10.912 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][scheduler][T#1]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.912 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][management][T#1]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.LinkedTransferQueue.awaitMatch(LinkedTransferQueue.java:734)
+ java.util.concurrent.LinkedTransferQueue.xfer(LinkedTransferQueue.java:647)
+ java.util.concurrent.LinkedTransferQueue.poll(LinkedTransferQueue.java:1277)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.913 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][generic][T#1]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.LinkedTransferQueue.awaitMatch(LinkedTransferQueue.java:737)
+ java.util.concurrent.LinkedTransferQueue.xfer(LinkedTransferQueue.java:647)
+ java.util.concurrent.LinkedTransferQueue.take(LinkedTransferQueue.java:1269)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.914 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][generic][T#2]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.LinkedTransferQueue.awaitMatch(LinkedTransferQueue.java:737)
+ java.util.concurrent.LinkedTransferQueue.xfer(LinkedTransferQueue.java:647)
+ java.util.concurrent.LinkedTransferQueue.take(LinkedTransferQueue.java:1269)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.915 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][transport_client_boss][T#1]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.916 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][generic][T#3]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.LinkedTransferQueue.awaitMatch(LinkedTransferQueue.java:737)
+ java.util.concurrent.LinkedTransferQueue.xfer(LinkedTransferQueue.java:647)
+ java.util.concurrent.LinkedTransferQueue.take(LinkedTransferQueue.java:1269)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.917 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][generic][T#4]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.LinkedTransferQueue.awaitMatch(LinkedTransferQueue.java:737)
+ java.util.concurrent.LinkedTransferQueue.xfer(LinkedTransferQueue.java:647)
+ java.util.concurrent.LinkedTransferQueue.take(LinkedTransferQueue.java:1269)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.918 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][transport_client_boss][T#2]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.918 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][transport_client_boss][T#3]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.919 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][transport_client_boss][T#4]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:756)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:411)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.920 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [elasticsearch[_client_][management][T#2]] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.LinkedTransferQueue.awaitMatch(LinkedTransferQueue.java:734)
+ java.util.concurrent.LinkedTransferQueue.xfer(LinkedTransferQueue.java:647)
+ java.util.concurrent.LinkedTransferQueue.poll(LinkedTransferQueue.java:1277)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.921 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-2-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:251)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:10.922 WARN [localhost-startStop-2]org.apache.catalina.loader.WebappClassLoaderBase.log:180 -The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-07-14 21:40:11.322 INFO [main]org.apache.catalina.util.LifecycleBase.log:180 -The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2020-07-14 21:40:11.323 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Stopping ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:40:11.326 INFO [main]org.apache.coyote.http11.Http11NioProtocol.log:180 -Destroying ProtocolHandler ["http-nio-8900"]
+2020-07-14 21:40:11.358 INFO [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logAutoConfigurationReport:101 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-14 21:40:11.366 INFO [main]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@674658f7: startup date [Tue Jul 14 21:38:37 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21b2e768
+2020-07-14 21:40:11.370 INFO [main]o.s.c.n.eureka.serviceregistry.EurekaServiceRegistry.deregister:65 -Unregistering application consumer-server with eureka with status DOWN
+2020-07-14 21:40:11.370 WARN [main]com.netflix.discovery.DiscoveryClient.notify:1297 -Saw local status change event StatusChangeEvent [timestamp=1594734011370, current=DOWN, previous=UP]
+2020-07-14 21:40:11.376 INFO [main]o.s.context.support.DefaultLifecycleProcessor.stop:366 -Stopping beans in phase 2147483647
+2020-07-14 21:40:11.381 INFO [main]o.s.context.support.DefaultLifecycleProcessor.stop:366 -Stopping beans in phase 0
+2020-07-14 21:40:11.383 INFO [main]o.s.cloud.netflix.zuul.ZuulFilterInitializer.contextDestroyed:77 -Stopping filter initializer
+2020-07-14 21:40:11.389 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2020-07-14 21:40:11.390 INFO [main]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans
+2020-07-14 21:40:11.532 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:826 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900: registering service...
+2020-07-14 21:40:11.548 INFO [DiscoveryClient-InstanceInfoReplicator-0]com.netflix.discovery.DiscoveryClient.register:835 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900 - registration status: 204
+2020-07-14 21:40:11.689 INFO [main]o.s.c.annotation.AnnotationConfigApplicationContext.doClose:993 -Closing FeignContext-producer-server: startup date [Tue Jul 14 21:39:44 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@674658f7
+2020-07-14 21:40:13.114 INFO [main]com.netflix.discovery.DiscoveryClient.shutdown:888 -Shutting down DiscoveryClient ...
+2020-07-14 21:40:16.118 INFO [main]com.netflix.discovery.DiscoveryClient.unregister:922 -Unregistering ...
+2020-07-14 21:40:16.137 INFO [main]com.netflix.discovery.DiscoveryClient.unregister:924 -DiscoveryClient_CONSUMER-SERVER/MS-UFIYVLDHDZMG:consumer-server:8900 - deregister  status: 200
+2020-07-14 21:40:16.212 INFO [main]com.netflix.discovery.DiscoveryClient.shutdown:911 -Completed shut down of DiscoveryClient
+2020-07-14 21:40:16.458 INFO [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7ffddc88}]o.s.c.annotation.AnnotationConfigApplicationContext.prepareRefresh:590 -Refreshing SpringClientFactory-localhost: startup date [Tue Jul 14 21:40:16 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@674658f7
+2020-07-14 21:40:16.461 WARN [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@7ffddc88}]o.s.c.annotation.AnnotationConfigApplicationContext.refresh:558 -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [org.springframework.cloud.netflix.ribbon.eureka.EurekaRibbonClientConfiguration]; nested exception is java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [org/springframework/cloud/netflix/ribbon/eureka/EurekaRibbonClientConfiguration.class]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+2020-07-14 21:41:44.269 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 21:46:44.274 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration
+2020-07-14 21:51:44.310 INFO [AsyncResolver-bootstrap-executor-0]c.n.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints:43 -Resolving eureka endpoints via configuration

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gcx.dao.syslogMapper">
+  <resultMap id="BaseResultMap" type="com.gcx.model.syslog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="remote_addr" jdbcType="VARCHAR" property="remoteAddr" />
+    <result column="user_agent" jdbcType="VARCHAR" property="userAgent" />
+    <result column="request_uri" jdbcType="VARCHAR" property="requestUri" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.gcx.model.syslog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="params" jdbcType="LONGVARCHAR" property="params" />
+    <result column="exception" jdbcType="LONGVARCHAR" property="exception" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, type, title, create_by, create_date, remote_addr, user_agent, request_uri, method
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    params, exception
+  </sql>
+  <select id="findByRecord" resultMap="BaseResultMap">
+    select <include refid='Base_Column_List' /> from sys_log where 1 = 1 <if test='record.id != null and record.id != "" '> and id = #{record.id,jdbcType=VARCHAR} </if><if test='record.type != null and record.type != "" '> and type = #{record.type,jdbcType=CHAR} </if><if test='record.title != null and record.title != "" '> and title = #{record.title,jdbcType=VARCHAR} </if><if test='record.createBy != null and record.createBy != "" '> and create_by = #{record.createBy,jdbcType=VARCHAR} </if><if test='record.createDate != null and record.createDate != "" '> and create_date = #{record.createDate,jdbcType=TIMESTAMP} </if><if test='record.remoteAddr != null and record.remoteAddr != "" '> and remote_addr = #{record.remoteAddr,jdbcType=VARCHAR} </if><if test='record.userAgent != null and record.userAgent != "" '> and user_agent = #{record.userAgent,jdbcType=VARCHAR} </if><if test='record.requestUri != null and record.requestUri != "" '> and request_uri = #{record.requestUri,jdbcType=VARCHAR} </if><if test='record.method != null and record.method != "" '> and method = #{record.method,jdbcType=VARCHAR} </if><if test='record.params != null and record.params != "" '> and params = #{record.params,jdbcType=LONGVARCHAR} </if><if test='record.exception != null and record.exception != "" '> and exception = #{record.exception,jdbcType=LONGVARCHAR} </if>
+  </select>
+</mapper>

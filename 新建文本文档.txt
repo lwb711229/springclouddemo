@@ -1,0 +1,14 @@
+CLASSPATH  .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar
+JAVA_HOME  C:\Program Files\Java\jdk1.8.0_172
+MAVEN_HOME  E:\gcx\Maven\apache-maven-3.5.0
+
+ZOOKEEPER_HOME  E:\zookeeper
+
+mvn clean
+mvn install
+
+
+
+github 账号
+username : lwb711229
+email    : l_wb1@163.com

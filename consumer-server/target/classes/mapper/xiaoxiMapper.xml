@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gcx.dao.xiaoxiMapper">
+  <resultMap id="BaseResultMap" type="com.gcx.model.xiaoxi">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="xxid" jdbcType="VARCHAR" property="xxid" />
+    <result column="entid" jdbcType="VARCHAR" property="entid" />
+    <result column="entname" jdbcType="VARCHAR" property="entname" />
+    <result column="deptid" jdbcType="VARCHAR" property="deptid" />
+    <result column="deptname" jdbcType="VARCHAR" property="deptname" />
+    <result column="userid" jdbcType="VARCHAR" property="userid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="pubtime" jdbcType="VARCHAR" property="pubtime" />
+    <result column="addtime" jdbcType="VARCHAR" property="addtime" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="deleteflag" jdbcType="VARCHAR" property="deleteflag" />
+    <result column="r1" jdbcType="VARCHAR" property="r1" />
+    <result column="r2" jdbcType="VARCHAR" property="r2" />
+    <result column="r3" jdbcType="VARCHAR" property="r3" />
+    <result column="r4" jdbcType="VARCHAR" property="r4" />
+    <result column="r5" jdbcType="VARCHAR" property="r5" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.gcx.model.xiaoxi">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="r6" jdbcType="LONGVARCHAR" property="r6" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    xxid, entid, entname, deptid, deptname, userid, username, title, pubtime, addtime, 
+    status, type, deleteflag, r1, r2, r3, r4, r5
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    content, r6
+  </sql>
+  <select id="findByRecord" resultMap="BaseResultMap">
+    select <include refid='Base_Column_List' /> from xiaoxi where 1 = 1 <if test='record.xxid != null and record.xxid != "" '> and xxid = #{record.xxid,jdbcType=VARCHAR} </if><if test='record.entid != null and record.entid != "" '> and entid = #{record.entid,jdbcType=VARCHAR} </if><if test='record.entname != null and record.entname != "" '> and entname = #{record.entname,jdbcType=VARCHAR} </if><if test='record.deptid != null and record.deptid != "" '> and deptid = #{record.deptid,jdbcType=VARCHAR} </if><if test='record.deptname != null and record.deptname != "" '> and deptname = #{record.deptname,jdbcType=VARCHAR} </if><if test='record.userid != null and record.userid != "" '> and userid = #{record.userid,jdbcType=VARCHAR} </if><if test='record.username != null and record.username != "" '> and username = #{record.username,jdbcType=VARCHAR} </if><if test='record.title != null and record.title != "" '> and title = #{record.title,jdbcType=VARCHAR} </if><if test='record.pubtime != null and record.pubtime != "" '> and pubtime = #{record.pubtime,jdbcType=VARCHAR} </if><if test='record.addtime != null and record.addtime != "" '> and addtime = #{record.addtime,jdbcType=VARCHAR} </if><if test='record.status != null and record.status != "" '> and status = #{record.status,jdbcType=VARCHAR} </if><if test='record.type != null and record.type != "" '> and type = #{record.type,jdbcType=VARCHAR} </if><if test='record.deleteflag != null and record.deleteflag != "" '> and deleteflag = #{record.deleteflag,jdbcType=VARCHAR} </if><if test='record.r1 != null and record.r1 != "" '> and r1 = #{record.r1,jdbcType=VARCHAR} </if><if test='record.r2 != null and record.r2 != "" '> and r2 = #{record.r2,jdbcType=VARCHAR} </if><if test='record.r3 != null and record.r3 != "" '> and r3 = #{record.r3,jdbcType=VARCHAR} </if><if test='record.r4 != null and record.r4 != "" '> and r4 = #{record.r4,jdbcType=VARCHAR} </if><if test='record.r5 != null and record.r5 != "" '> and r5 = #{record.r5,jdbcType=VARCHAR} </if><if test='record.content != null and record.content != "" '> and content = #{record.content,jdbcType=LONGVARCHAR} </if><if test='record.r6 != null and record.r6 != "" '> and r6 = #{record.r6,jdbcType=LONGVARCHAR} </if>
+  </select>
+</mapper>

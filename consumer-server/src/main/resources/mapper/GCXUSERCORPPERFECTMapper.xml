@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gcx.dao.GCXUSERCORPPERFECTMapper">
+  <resultMap id="BaseResultMap" type="com.gcx.model.GCXUSERCORPPERFECT">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="CORP_ID" jdbcType="DECIMAL" property="corpId" />
+    <result column="CORP_PEOPLE" jdbcType="VARCHAR" property="corpPeople" />
+    <result column="PHONENUM" jdbcType="VARCHAR" property="phonenum" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="GENDER" jdbcType="DECIMAL" property="gender" />
+    <result column="CORP_NAME" jdbcType="VARCHAR" property="corpName" />
+    <result column="CORP_ADDRESS" jdbcType="VARCHAR" property="corpAddress" />
+    <result column="CORP_ADDRESS_ID" jdbcType="VARCHAR" property="corpAddressId" />
+    <result column="CORP_DETAIL_ADDRESS" jdbcType="VARCHAR" property="corpDetailAddress" />
+    <result column="CORP_INDUSTRY" jdbcType="VARCHAR" property="corpIndustry" />
+    <result column="CERTIFI_NUM" jdbcType="VARCHAR" property="certifiNum" />
+    <result column="FRNAME" jdbcType="VARCHAR" property="frname" />
+    <result column="FRTEL" jdbcType="VARCHAR" property="frtel" />
+    <result column="BUSINESS_LICENCE" jdbcType="VARCHAR" property="businessLicence" />
+    <result column="CERTIFICATE" jdbcType="VARCHAR" property="certificate" />
+    <result column="ID_PICTURE" jdbcType="VARCHAR" property="idPicture" />
+    <result column="STATUS" jdbcType="VARCHAR" property="status" />
+    <result column="DELETE_FLAG" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="inserttime" jdbcType="TIMESTAMP" property="inserttime" />
+    <result column="A1" jdbcType="VARCHAR" property="a1" />
+    <result column="A2" jdbcType="VARCHAR" property="a2" />
+    <result column="A3" jdbcType="VARCHAR" property="a3" />
+    <result column="A4" jdbcType="VARCHAR" property="a4" />
+    <result column="A5" jdbcType="VARCHAR" property="a5" />
+    <result column="A6" jdbcType="VARCHAR" property="a6" />
+    <result column="A7" jdbcType="VARCHAR" property="a7" />
+    <result column="A8" jdbcType="VARCHAR" property="a8" />
+    <result column="A9" jdbcType="VARCHAR" property="a9" />
+    <result column="A10" jdbcType="VARCHAR" property="a10" />
+    <result column="CORP_LOGO" jdbcType="VARCHAR" property="corpLogo" />
+    <result column="VERIFIED" jdbcType="VARCHAR" property="verified" />
+    <result column="CARD" jdbcType="VARCHAR" property="card" />
+    <result column="CREDIT_CARD" jdbcType="VARCHAR" property="creditCard" />
+    <result column="INTRODUCTION" jdbcType="VARCHAR" property="introduction" />
+    <result column="QYXMLB" jdbcType="VARCHAR" property="qyxmlb" />
+    <result column="QYLX" jdbcType="VARCHAR" property="qylx" />
+    <result column="ZJLX" jdbcType="VARCHAR" property="zjlx" />
+    <result column="ZCZJ" jdbcType="VARCHAR" property="zczj" />
+    <result column="RYGM" jdbcType="VARCHAR" property="rygm" />
+    <result column="YYQX" jdbcType="TIMESTAMP" property="yyqx" />
+    <result column="YYQX2" jdbcType="TIMESTAMP" property="yyqx2" />
+    <result column="QYWZ" jdbcType="VARCHAR" property="qywz" />
+    <result column="Z1" jdbcType="VARCHAR" property="z1" />
+    <result column="Z2" jdbcType="VARCHAR" property="z2" />
+    <result column="Z3" jdbcType="VARCHAR" property="z3" />
+    <result column="Z4" jdbcType="VARCHAR" property="z4" />
+    <result column="Z5" jdbcType="VARCHAR" property="z5" />
+    <result column="Z6" jdbcType="VARCHAR" property="z6" />
+    <result column="Z7" jdbcType="VARCHAR" property="z7" />
+    <result column="Z8" jdbcType="VARCHAR" property="z8" />
+    <result column="Z9" jdbcType="VARCHAR" property="z9" />
+    <result column="Y1" jdbcType="VARCHAR" property="y1" />
+    <result column="Y2" jdbcType="VARCHAR" property="y2" />
+    <result column="Y3" jdbcType="VARCHAR" property="y3" />
+    <result column="Y4" jdbcType="VARCHAR" property="y4" />
+    <result column="Y5" jdbcType="VARCHAR" property="y5" />
+    <result column="Y6" jdbcType="VARCHAR" property="y6" />
+    <result column="Y7" jdbcType="VARCHAR" property="y7" />
+    <result column="Y8" jdbcType="VARCHAR" property="y8" />
+    <result column="Y9" jdbcType="VARCHAR" property="y9" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    CORP_ID, CORP_PEOPLE, PHONENUM, EMAIL, GENDER, CORP_NAME, CORP_ADDRESS, CORP_ADDRESS_ID, 
+    CORP_DETAIL_ADDRESS, CORP_INDUSTRY, CERTIFI_NUM, FRNAME, FRTEL, BUSINESS_LICENCE, 
+    CERTIFICATE, ID_PICTURE, STATUS, DELETE_FLAG, inserttime, A1, A2, A3, A4, A5, A6, 
+    A7, A8, A9, A10, CORP_LOGO, VERIFIED, CARD, CREDIT_CARD, INTRODUCTION, QYXMLB, QYLX, 
+    ZJLX, ZCZJ, RYGM, YYQX, YYQX2, QYWZ, Z1, Z2, Z3, Z4, Z5, Z6, Z7, Z8, Z9, Y1, Y2, 
+    Y3, Y4, Y5, Y6, Y7, Y8, Y9
+  </sql>
+  <select id="findByRecord" resultMap="BaseResultMap">
+    select <include refid='Base_Column_List' /> from GCX_USER_CORP_PERFECT where 1 = 1 <if test='record.corpId != null and record.corpId != "" '> and CORP_ID = #{record.corpId,jdbcType=DECIMAL} </if><if test='record.corpPeople != null and record.corpPeople != "" '> and CORP_PEOPLE = #{record.corpPeople,jdbcType=VARCHAR} </if><if test='record.phonenum != null and record.phonenum != "" '> and PHONENUM = #{record.phonenum,jdbcType=VARCHAR} </if><if test='record.email != null and record.email != "" '> and EMAIL = #{record.email,jdbcType=VARCHAR} </if><if test='record.gender != null and record.gender != "" '> and GENDER = #{record.gender,jdbcType=DECIMAL} </if><if test='record.corpName != null and record.corpName != "" '> and CORP_NAME = #{record.corpName,jdbcType=VARCHAR} </if><if test='record.corpAddress != null and record.corpAddress != "" '> and CORP_ADDRESS = #{record.corpAddress,jdbcType=VARCHAR} </if><if test='record.corpAddressId != null and record.corpAddressId != "" '> and CORP_ADDRESS_ID = #{record.corpAddressId,jdbcType=VARCHAR} </if><if test='record.corpDetailAddress != null and record.corpDetailAddress != "" '> and CORP_DETAIL_ADDRESS = #{record.corpDetailAddress,jdbcType=VARCHAR} </if><if test='record.corpIndustry != null and record.corpIndustry != "" '> and CORP_INDUSTRY = #{record.corpIndustry,jdbcType=VARCHAR} </if><if test='record.certifiNum != null and record.certifiNum != "" '> and CERTIFI_NUM = #{record.certifiNum,jdbcType=VARCHAR} </if><if test='record.frname != null and record.frname != "" '> and FRNAME = #{record.frname,jdbcType=VARCHAR} </if><if test='record.frtel != null and record.frtel != "" '> and FRTEL = #{record.frtel,jdbcType=VARCHAR} </if><if test='record.businessLicence != null and record.businessLicence != "" '> and BUSINESS_LICENCE = #{record.businessLicence,jdbcType=VARCHAR} </if><if test='record.certificate != null and record.certificate != "" '> and CERTIFICATE = #{record.certificate,jdbcType=VARCHAR} </if><if test='record.idPicture != null and record.idPicture != "" '> and ID_PICTURE = #{record.idPicture,jdbcType=VARCHAR} </if><if test='record.status != null and record.status != "" '> and STATUS = #{record.status,jdbcType=VARCHAR} </if><if test='record.deleteFlag != null and record.deleteFlag != "" '> and DELETE_FLAG = #{record.deleteFlag,jdbcType=INTEGER} </if><if test='record.inserttime != null and record.inserttime != "" '> and inserttime = #{record.inserttime,jdbcType=TIMESTAMP} </if><if test='record.a1 != null and record.a1 != "" '> and A1 = #{record.a1,jdbcType=VARCHAR} </if><if test='record.a2 != null and record.a2 != "" '> and A2 = #{record.a2,jdbcType=VARCHAR} </if><if test='record.a3 != null and record.a3 != "" '> and A3 = #{record.a3,jdbcType=VARCHAR} </if><if test='record.a4 != null and record.a4 != "" '> and A4 = #{record.a4,jdbcType=VARCHAR} </if><if test='record.a5 != null and record.a5 != "" '> and A5 = #{record.a5,jdbcType=VARCHAR} </if><if test='record.a6 != null and record.a6 != "" '> and A6 = #{record.a6,jdbcType=VARCHAR} </if><if test='record.a7 != null and record.a7 != "" '> and A7 = #{record.a7,jdbcType=VARCHAR} </if><if test='record.a8 != null and record.a8 != "" '> and A8 = #{record.a8,jdbcType=VARCHAR} </if><if test='record.a9 != null and record.a9 != "" '> and A9 = #{record.a9,jdbcType=VARCHAR} </if><if test='record.a10 != null and record.a10 != "" '> and A10 = #{record.a10,jdbcType=VARCHAR} </if><if test='record.corpLogo != null and record.corpLogo != "" '> and CORP_LOGO = #{record.corpLogo,jdbcType=VARCHAR} </if><if test='record.verified != null and record.verified != "" '> and VERIFIED = #{record.verified,jdbcType=VARCHAR} </if><if test='record.card != null and record.card != "" '> and CARD = #{record.card,jdbcType=VARCHAR} </if><if test='record.creditCard != null and record.creditCard != "" '> and CREDIT_CARD = #{record.creditCard,jdbcType=VARCHAR} </if><if test='record.introduction != null and record.introduction != "" '> and INTRODUCTION = #{record.introduction,jdbcType=VARCHAR} </if><if test='record.qyxmlb != null and record.qyxmlb != "" '> and QYXMLB = #{record.qyxmlb,jdbcType=VARCHAR} </if><if test='record.qylx != null and record.qylx != "" '> and QYLX = #{record.qylx,jdbcType=VARCHAR} </if><if test='record.zjlx != null and record.zjlx != "" '> and ZJLX = #{record.zjlx,jdbcType=VARCHAR} </if><if test='record.zczj != null and record.zczj != "" '> and ZCZJ = #{record.zczj,jdbcType=VARCHAR} </if><if test='record.rygm != null and record.rygm != "" '> and RYGM = #{record.rygm,jdbcType=VARCHAR} </if><if test='record.yyqx != null and record.yyqx != "" '> and YYQX = #{record.yyqx,jdbcType=TIMESTAMP} </if><if test='record.yyqx2 != null and record.yyqx2 != "" '> and YYQX2 = #{record.yyqx2,jdbcType=TIMESTAMP} </if><if test='record.qywz != null and record.qywz != "" '> and QYWZ = #{record.qywz,jdbcType=VARCHAR} </if><if test='record.z1 != null and record.z1 != "" '> and Z1 = #{record.z1,jdbcType=VARCHAR} </if><if test='record.z2 != null and record.z2 != "" '> and Z2 = #{record.z2,jdbcType=VARCHAR} </if><if test='record.z3 != null and record.z3 != "" '> and Z3 = #{record.z3,jdbcType=VARCHAR} </if><if test='record.z4 != null and record.z4 != "" '> and Z4 = #{record.z4,jdbcType=VARCHAR} </if><if test='record.z5 != null and record.z5 != "" '> and Z5 = #{record.z5,jdbcType=VARCHAR} </if><if test='record.z6 != null and record.z6 != "" '> and Z6 = #{record.z6,jdbcType=VARCHAR} </if><if test='record.z7 != null and record.z7 != "" '> and Z7 = #{record.z7,jdbcType=VARCHAR} </if><if test='record.z8 != null and record.z8 != "" '> and Z8 = #{record.z8,jdbcType=VARCHAR} </if><if test='record.z9 != null and record.z9 != "" '> and Z9 = #{record.z9,jdbcType=VARCHAR} </if><if test='record.y1 != null and record.y1 != "" '> and Y1 = #{record.y1,jdbcType=VARCHAR} </if><if test='record.y2 != null and record.y2 != "" '> and Y2 = #{record.y2,jdbcType=VARCHAR} </if><if test='record.y3 != null and record.y3 != "" '> and Y3 = #{record.y3,jdbcType=VARCHAR} </if><if test='record.y4 != null and record.y4 != "" '> and Y4 = #{record.y4,jdbcType=VARCHAR} </if><if test='record.y5 != null and record.y5 != "" '> and Y5 = #{record.y5,jdbcType=VARCHAR} </if><if test='record.y6 != null and record.y6 != "" '> and Y6 = #{record.y6,jdbcType=VARCHAR} </if><if test='record.y7 != null and record.y7 != "" '> and Y7 = #{record.y7,jdbcType=VARCHAR} </if><if test='record.y8 != null and record.y8 != "" '> and Y8 = #{record.y8,jdbcType=VARCHAR} </if><if test='record.y9 != null and record.y9 != "" '> and Y9 = #{record.y9,jdbcType=VARCHAR} </if>
+  </select>
+</mapper>

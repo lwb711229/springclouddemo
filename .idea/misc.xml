@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="E:/spring-cloud-tutorial-master/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-bus/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-bus/tutorial-bus-configcenter/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-bus/tutorial-bus-registry/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-bus/tutorial-bus-service0/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-bus/tutorial-bus-service1/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-config/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-config/tutorial-config-configcenter/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-config/tutorial-config-registry/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-config/tutorial-config-service0/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-netflix/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-netflix/tutorial-netflix-registry/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-netflix/tutorial-netflix-service0/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-netflix/tutorial-netflix-service1/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-sleuth/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-sleuth/tutorial-sleuth-registry/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-sleuth/tutorial-sleuth-service0/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-sleuth/tutorial-sleuth-service1/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-stream/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-stream/tutorial-stream-common/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-stream/tutorial-stream-consumer0/pom.xml" />
+        <option value="E:/spring-cloud-tutorial-master/tutorial-stream/tutorial-stream-producer0/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>

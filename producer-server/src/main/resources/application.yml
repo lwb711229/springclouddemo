@@ -1,0 +1,25 @@
+server:
+  port: 7902
+spring:
+  application:
+    name: producer-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+zuul:
+  routes:
+    producer-server:
+      path: /producer-server:/**
+      serviceId: producer-server
+
+
+
+
+
+
+
+
+
+

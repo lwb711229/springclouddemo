@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gcx.dao.GcxuserMapper">
+  <resultMap id="BaseResultMap" type="com.gcx.model.Gcxuser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="USER_ID" jdbcType="DECIMAL" property="userId" />
+    <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
+    <result column="PASSWORD" jdbcType="VARCHAR" property="password" />
+    <result column="MOBILE_NUMBER" jdbcType="VARCHAR" property="mobileNumber" />
+    <result column="EMAIL" jdbcType="VARCHAR" property="email" />
+    <result column="STATUS" jdbcType="DECIMAL" property="status" />
+    <result column="ACC_CATE" jdbcType="DECIMAL" property="accCate" />
+    <result column="RELATED_ID" jdbcType="DECIMAL" property="relatedId" />
+    <result column="REGIST_TIME" jdbcType="TIMESTAMP" property="registTime" />
+    <result column="LAST_LOGIN_TIME" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="MODIFY_PWD_TIME" jdbcType="TIMESTAMP" property="modifyPwdTime" />
+    <result column="LOGIN_NUM" jdbcType="DECIMAL" property="loginNum" />
+    <result column="SOURCE" jdbcType="VARCHAR" property="source" />
+    <result column="HEAD_PORTRAITS" jdbcType="VARCHAR" property="headPortraits" />
+    <result column="REGIST_TYPE" jdbcType="VARCHAR" property="registType" />
+    <result column="DELETE_FLAG" jdbcType="INTEGER" property="deleteFlag" />
+    <result column="USER_GROUP" jdbcType="VARCHAR" property="userGroup" />
+    <result column="REAL_NAME" jdbcType="VARCHAR" property="realName" />
+    <result column="Z1" jdbcType="VARCHAR" property="z1" />
+    <result column="Z2" jdbcType="VARCHAR" property="z2" />
+    <result column="Z3" jdbcType="VARCHAR" property="z3" />
+    <result column="Z4" jdbcType="VARCHAR" property="z4" />
+    <result column="Z5" jdbcType="VARCHAR" property="z5" />
+    <result column="Z6" jdbcType="VARCHAR" property="z6" />
+    <result column="Z7" jdbcType="VARCHAR" property="z7" />
+    <result column="Z8" jdbcType="VARCHAR" property="z8" />
+    <result column="Z9" jdbcType="VARCHAR" property="z9" />
+    <result column="Z10" jdbcType="VARCHAR" property="z10" />
+    <result column="DEPT" jdbcType="VARCHAR" property="dept" />
+    <result column="DEPT_ID" jdbcType="VARCHAR" property="deptId" />
+    <result column="POST" jdbcType="VARCHAR" property="post" />
+    <result column="POST_ID" jdbcType="VARCHAR" property="postId" />
+    <result column="GENDER" jdbcType="VARCHAR" property="gender" />
+    <result column="AREA" jdbcType="VARCHAR" property="area" />
+    <result column="AREA_ID" jdbcType="VARCHAR" property="areaId" />
+    <result column="MAIN_ID" jdbcType="VARCHAR" property="mainId" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.gcx.model.Gcxuser">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="OTHER" jdbcType="LONGVARCHAR" property="other" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    USER_ID, USER_NAME, PASSWORD, MOBILE_NUMBER, EMAIL, STATUS, ACC_CATE, RELATED_ID, 
+    REGIST_TIME, LAST_LOGIN_TIME, MODIFY_PWD_TIME, LOGIN_NUM, SOURCE, HEAD_PORTRAITS, 
+    REGIST_TYPE, DELETE_FLAG, USER_GROUP, REAL_NAME, Z1, Z2, Z3, Z4, Z5, Z6, Z7, Z8, 
+    Z9, Z10, DEPT, DEPT_ID, POST, POST_ID, GENDER, AREA, AREA_ID, MAIN_ID
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    OTHER
+  </sql>
+  <select id="findByRecord" resultMap="BaseResultMap">
+    select <include refid='Base_Column_List' /> from GCX_USER where 1 = 1 <if test='record.userId != null and record.userId != "" '> and USER_ID = #{record.userId,jdbcType=DECIMAL} </if><if test='record.userName != null and record.userName != "" '> and USER_NAME = #{record.userName,jdbcType=VARCHAR} </if><if test='record.password != null and record.password != "" '> and PASSWORD = #{record.password,jdbcType=VARCHAR} </if><if test='record.mobileNumber != null and record.mobileNumber != "" '> and MOBILE_NUMBER = #{record.mobileNumber,jdbcType=VARCHAR} </if><if test='record.email != null and record.email != "" '> and EMAIL = #{record.email,jdbcType=VARCHAR} </if><if test='record.status != null and record.status != "" '> and STATUS = #{record.status,jdbcType=DECIMAL} </if><if test='record.accCate != null and record.accCate != "" '> and ACC_CATE = #{record.accCate,jdbcType=DECIMAL} </if><if test='record.relatedId != null and record.relatedId != "" '> and RELATED_ID = #{record.relatedId,jdbcType=DECIMAL} </if><if test='record.registTime != null and record.registTime != "" '> and REGIST_TIME = #{record.registTime,jdbcType=TIMESTAMP} </if><if test='record.lastLoginTime != null and record.lastLoginTime != "" '> and LAST_LOGIN_TIME = #{record.lastLoginTime,jdbcType=TIMESTAMP} </if><if test='record.modifyPwdTime != null and record.modifyPwdTime != "" '> and MODIFY_PWD_TIME = #{record.modifyPwdTime,jdbcType=TIMESTAMP} </if><if test='record.loginNum != null and record.loginNum != "" '> and LOGIN_NUM = #{record.loginNum,jdbcType=DECIMAL} </if><if test='record.source != null and record.source != "" '> and SOURCE = #{record.source,jdbcType=VARCHAR} </if><if test='record.headPortraits != null and record.headPortraits != "" '> and HEAD_PORTRAITS = #{record.headPortraits,jdbcType=VARCHAR} </if><if test='record.registType != null and record.registType != "" '> and REGIST_TYPE = #{record.registType,jdbcType=VARCHAR} </if><if test='record.deleteFlag != null and record.deleteFlag != "" '> and DELETE_FLAG = #{record.deleteFlag,jdbcType=INTEGER} </if><if test='record.userGroup != null and record.userGroup != "" '> and USER_GROUP = #{record.userGroup,jdbcType=VARCHAR} </if><if test='record.realName != null and record.realName != "" '> and REAL_NAME = #{record.realName,jdbcType=VARCHAR} </if><if test='record.z1 != null and record.z1 != "" '> and Z1 = #{record.z1,jdbcType=VARCHAR} </if><if test='record.z2 != null and record.z2 != "" '> and Z2 = #{record.z2,jdbcType=VARCHAR} </if><if test='record.z3 != null and record.z3 != "" '> and Z3 = #{record.z3,jdbcType=VARCHAR} </if><if test='record.z4 != null and record.z4 != "" '> and Z4 = #{record.z4,jdbcType=VARCHAR} </if><if test='record.z5 != null and record.z5 != "" '> and Z5 = #{record.z5,jdbcType=VARCHAR} </if><if test='record.z6 != null and record.z6 != "" '> and Z6 = #{record.z6,jdbcType=VARCHAR} </if><if test='record.z7 != null and record.z7 != "" '> and Z7 = #{record.z7,jdbcType=VARCHAR} </if><if test='record.z8 != null and record.z8 != "" '> and Z8 = #{record.z8,jdbcType=VARCHAR} </if><if test='record.z9 != null and record.z9 != "" '> and Z9 = #{record.z9,jdbcType=VARCHAR} </if><if test='record.z10 != null and record.z10 != "" '> and Z10 = #{record.z10,jdbcType=VARCHAR} </if><if test='record.dept != null and record.dept != "" '> and DEPT = #{record.dept,jdbcType=VARCHAR} </if><if test='record.deptId != null and record.deptId != "" '> and DEPT_ID = #{record.deptId,jdbcType=VARCHAR} </if><if test='record.post != null and record.post != "" '> and POST = #{record.post,jdbcType=VARCHAR} </if><if test='record.postId != null and record.postId != "" '> and POST_ID = #{record.postId,jdbcType=VARCHAR} </if><if test='record.gender != null and record.gender != "" '> and GENDER = #{record.gender,jdbcType=VARCHAR} </if><if test='record.area != null and record.area != "" '> and AREA = #{record.area,jdbcType=VARCHAR} </if><if test='record.areaId != null and record.areaId != "" '> and AREA_ID = #{record.areaId,jdbcType=VARCHAR} </if><if test='record.mainId != null and record.mainId != "" '> and MAIN_ID = #{record.mainId,jdbcType=VARCHAR} </if><if test='record.other != null and record.other != "" '> and OTHER = #{record.other,jdbcType=LONGVARCHAR} </if>
+  </select>
+
+
+
+
+</mapper>

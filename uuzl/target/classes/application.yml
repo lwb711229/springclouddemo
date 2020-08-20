@@ -1,0 +1,81 @@
+    server:
+      port: 9000
+    spring:
+      application:
+        name: uuzl
+
+      redis:
+        database: 0
+        host: 127.0.0.1
+        port: 6379
+        password:
+        timeout: 60s  # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
+          # 连接池配置，2.0中直接使用jedis或者lettuce配置连接池
+        jedis:
+          pool:
+            # 最大空闲连接数
+            max-idle: 500
+            # 最小空闲连接数
+            min-idle: 50
+            # 等待可用连接的最大时间，负数为不限制
+            max-wait:  -1s
+            # 最大活跃连接数，负数为不限制
+            max-active: -1
+
+
+    eureka:
+      client:
+        serviceUrl:
+          defaultZone: http://localhost:1000/eureka/
+      instance:
+        prefer-ip-address: true
+    feign:
+      hystrix:
+        enabled: true
+
+    zuul:
+      sensitiveHeaders:  #zuul.sensitiveHeaders=Cookie,Set-Cookie,Authorization  默认忽略下游传导 zuul.ignoredHeaders=Cookie,Set-Cookie
+      routes:
+        consumer-server:
+          path: /consumer-server/**
+          serviceId: consumer-server
+          strip-prefix: false  # 如果false 把前缀 consumer-server 带过去
+          #url: http://localhost:8900/order/12
+      #>>>>>>>>>zuul限流: https://github.com/marcosbarbero/spring-cloud-zuul-ratelimit
+      # http://localhost:9000/consumer-server/order/11
+      #某个IP的客户端被限流并不影响其他客户端，即API网关对每个客户端限流是相互独立的
+        producer-server:
+          path: /producer-server:/**
+          serviceId: producer-server
+          strip-prefix: false  # 如果false 把前缀 consumer-server 带过去
+      ratelimit:
+        # 开启限流
+        enabled: true
+        # 代理之后
+        behind-proxy: true
+        # 限流数据存储(默认：IN_MEMORY)
+        repository: REDIS
+        # 对应用来标识请求的key的前缀
+       # key-prefix: order
+        #policies 配置多个url共用一个限流次数
+        default-policy-list: # 默认策略
+        - limit: 10 #每个刷新窗口请求数
+          quota: 1000 #每个刷新窗口总请求时间(秒)
+          refresh-interval: 60 #刷新窗口时间(秒),默认60秒
+          type:
+          #- user #基于用户标识，默认匿名anonymous
+          - origin #基于用户IP
+          #- url #基于下游服务URL
+          #- httpmethod #基于请求方法
+        policy-list:
+          consumer-server:
+          - limit: 10
+            refresh-interval: 60
+            type:
+            - origin
+          serviceB:
+          - limit: 2
+            refresh-interval: 2
+            type:
+            - origin
+    gcxId: GCXID
