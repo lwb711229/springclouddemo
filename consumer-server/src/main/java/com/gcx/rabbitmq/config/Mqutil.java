@@ -47,7 +47,8 @@ public class Mqutil {
                     message.getMessageProperties().setExpiration(String.valueOf(40000));
                     return message;
                 },
-                new CorrelationData(UUID.randomUUID().toString()));
+                new CorrelationData(UUID.randomUUID().toString())
+        );
 
 
     }
