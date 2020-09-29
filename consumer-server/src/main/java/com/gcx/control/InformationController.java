@@ -97,12 +97,12 @@ public class InformationController {
 			@ApiImplicitParam(name = "Type", value = "企业1个人0", required = true, paramType = "query", dataType = "String"),
 			 @ApiImplicitParam(name = "TellNumber", value = "注册手机号", required = true, paramType = "query", dataType = "String"),
 			 @ApiImplicitParam(name = "Password", value = "密码", required = true, paramType = "query", dataType = "String"),
-			 @ApiImplicitParam(name = "sysNmae", value = "系统说明", required = false, paramType = "说明", dataType = "String"),
+			// @ApiImplicitParam(name = "sysNmae", value = "系统说明", required = false, paramType = "说明", dataType = "String"),
 			 @ApiImplicitParam(name = "msgCode", value = "验证码", required = true, paramType = "query", dataType = "String")
 	 })
 	@GetMapping("/informationController/addRecord.do")
 	public MyResult<Object> addRecord(HttpServletRequest request, HttpServletResponse response,
-									  String Type, String TellNumber, String Password, @RequestParam(defaultValue = "信用识别") String sysNmae, String msgCode){
+									  String Type, String TellNumber, String Password, @RequestParam(required = true,value = "系统说明",defaultValue = "信用识别") String sysNmae, String msgCode){
 		
 		if("".equals(TellNumber) || TellNumber==null) return MyResult.error("用户名为空");
 		if("".equals(Password) || Password==null) return MyResult.error("密码为空");
@@ -110,7 +110,7 @@ public class InformationController {
 		String where1 = "";
 
 		String authId = "";
-		//判断是否已生成 cookie唯一标示
+		//判断是否已生成 cookie唯一标示GcxuserMapper
 		authId = CookieUtils.getCookieValue(request, gcxId);
 		//如果没有 生成 并存入cookie
 		if("".equals(authId) || authId==null){
@@ -150,6 +150,7 @@ public class InformationController {
 			user.setUserGroup(System.nanoTime() + "");
 
 			i =	gcxuserMapper.insertSelective(user);
+
 			    
 		
 			//gcxWsUserZc.setPassword(MD5.MD5ofStr(Password));

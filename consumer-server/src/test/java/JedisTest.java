@@ -546,9 +546,9 @@ public class JedisTest {
         for (int i = 0; i < 100000; i++) {
             pipeline.set("key" + i, "value" + i);
             pipeline.hset("user", "key" + i, "vlaue" + i);
-            if (i % 1000 == 0) {
-                pipeline.sync();
-            }
+           // if (i % 1000 == 0) {
+           //     pipeline.sync();
+           // }
         }
         pipeline.sync();
         long end = System.currentTimeMillis() - start;

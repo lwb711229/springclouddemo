@@ -1,0 +1,738 @@
+springboot多数据源配置及自动切换（二）
+
+andyzau007 2019-03-12 15:33:58   3097   收藏 9
+分类专栏： spring全家桶学习记录
+版权
+springboot多数据源配置及自动切换（二）
+
+动态切换数据源配置的原理
+
+DataSource是和线程绑定的，动态数据源的配置主要是通过继承AbstractRoutingDataSource类实现的，实现在AbstractRoutingDataSource类中的 protected Object determineCurrentLookupKey()方法来获取数据源，所以我们需要先创建一个多线程线程数据隔离的类来存放DataSource，然后在determineCurrentLookupKey()方法中通过这个类获取当前线程的DataSource，在AbstractRoutingDataSource类中，DataSource是通过Key-value的方式保存的，我们可以通过ThreadLocal来保存Key，从而实现数据源的动态切换
+
+1、配置数据源核心配置文件application.yaml，定义多数据源的url、uername等信息
+
+spring:
+  freemarker:
+    cache: false
+    charset: utf-8
+    enabled: true
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    primary:
+      driverClassName: com.mysql.jdbc.Driver
+      username: root
+      password: root
+      url: jdbc:mysql://localhost:3306/rap_db
+      type: com.alibaba.druid.pool.DruidDataSource
+    local:
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: root
+        url: jdbc:mysql://localhost:3306/test
+        type: com.alibaba.druid.pool.DruidDataSource
+    prod:
+        driver-class-name: com.mysql.jdbc.Driver
+        username: root
+        password: root
+        url: jdbc:mysql://localhost:3306/prod
+        type: com.alibaba.druid.pool.DruidDataSource
+
+server:
+  port: 8088
+diy.user:
+   id: 12
+logging:
+  file: /log.txt
+  level: trace
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  typeAliasesPackage:
+  global-config:
+    id-type: 3
+    refresh-mapper: true
+    capital-mode: true
+    field-strategy: 2
+    db-column-underline: false
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+2、定义数据源（在工程的config包下面）
+
+package com.river.datasource;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.river.common.ContextConst;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import javax.sql.DataSource;
+import java.util.HashMap;
+@Configuration
+public class MutiplyDataSource {
+	//@Primary注解在哪个ds，默认使用那个ds
+
+    @Bean(name = "dataSourcePrimary")
+    @ConfigurationProperties(prefix = "spring.datasource.primary")
+    public DataSource primaryDataSource(){
+        return new DruidDataSource();
+    }
+    @Bean(name = "dataSourceLocal")
+    @ConfigurationProperties(prefix = "spring.datasource.local")
+    public DataSource localDataSource(){
+        return new DruidDataSource();
+    }
+
+    @Bean(name = "dataSourceProd")
+    @ConfigurationProperties(prefix = "spring.datasource.prod")
+    public DataSource prodDataSource(){
+        return new DruidDataSource();
+    }
+
+    @Primary
+    @Bean(name = "dynamicDataSource")
+    public DataSource dynamicDataSource() {
+        DynamicDataSource dynamicDataSource = new DynamicDataSource();
+        //配置默认数据源
+        dynamicDataSource.setDefaultTargetDataSource(primaryDataSource());
+
+        //配置多数据源
+        HashMap<Object, Object> dataSourceMap = new HashMap();
+        dataSourceMap.put(ContextConst.DataSourceType.PRIMARY.name(),primaryDataSource());
+        dataSourceMap.put(ContextConst.DataSourceType.LOCAL.name(),localDataSource());
+        dataSourceMap.put(ContextConst.DataSourceType.PROD.name(),prodDataSource());
+        dynamicDataSource.setTargetDataSources(dataSourceMap);
+        return dynamicDataSource;
+    }
+
+    /**
+     * 配置@Transactional注解事务
+     * @return
+     */
+    @Bean
+    public PlatformTransactionManager transactionManager() {
+        return new DataSourceTransactionManager(dynamicDataSource());
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+3、动态数据源实现类,继承AbstractRoutingDataSource
+
+package com.river.datasource;
+import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
+
+public class DynamicDataSource extends AbstractRoutingDataSource{
+    @Override
+    protected Object determineCurrentLookupKey() {
+        return DataSourceContextHolder.getDataSource();
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+4、数据源持有类,配合ThreadLocal存储数据源key
+
+package com.river.datasource;
+import lombok.extern.log4j.Log4j;
+/**
+ * description:保存线程安全的数据源
+ */
+@Log4j
+public class DataSourceContextHolder {
+    private static final String DEFAULT_DATASOURCE = "PRIMARY_DATASOURCE";
+    private static final ThreadLocal<String> contextHolder = new ThreadLocal<String>();
+    public static void setDataSource(String dbType){
+        log.info("切换到["+dbType+"]数据源");
+        contextHolder.set(dbType);
+    }
+
+    public static String getDataSource(){
+        return contextHolder.get();
+    }
+
+    public static void clearDataSource(){
+        contextHolder.remove();
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+5、定义切换数据源的注解和切面,实现数据源的动态切换
+springboot有提供AbstractRoutingDataSource#determineCurrentLookupKey抽象方法去指定数据源,我们要做的就是实现切换数据源的逻辑;通过AOP在调用数据库之前切换数据源;
+
+package com.river.annotation;
+import com.river.common.ContextConst;
+import java.lang.annotation.*;
+
+@Target({ElementType.TYPE,ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface DataSourceSign {
+    ContextConst.DataSourceType value() default ContextConst.DataSourceType.PRIMARY;
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+package com.river.aspect;
+import com.river.annotation.DataSource;
+import com.river.common.ContextConst;
+import com.river.datasource.DataSourceContextHolder;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.stereotype.Component;
+import java.lang.reflect.Method;
+@Component
+@Order(-1)// 保证该AOP在@Transactional之前执行
+@Aspect
+public class DynamicDataSourceAspect {
+
+    @Before("execution(* com.river.service..*.*(..))")
+    public void before(JoinPoint point){
+        try {
+            DataSourceSign annotationOfClass =
+            	point.getTarget().getClass().getAnnotation(DataSourceSign.class);
+
+            String methodName = point.getSignature().getName();
+
+            Class[] parameterTypes =
+            	((MethodSignature) point.getSignature()).getParameterTypes();
+
+            Method method =
+            	point.getTarget().getClass().getMethod(methodName, parameterTypes);
+
+            DataSourceSign methodAnnotation =
+            	method.getAnnotation(DataSourceSign.class);
+
+            methodAnnotation = methodAnnotation ==
+            	null ? annotationOfClass:methodAnnotation;
+
+            ContextConst.DataSourceType dataSourceType =
+            	methodAnnotation != null &&  methodAnnotation.value() !=null ?
+            	methodAnnotation.value() :ContextConst.DataSourceType.PRIMARY ;
+            DataSourceContextHolder.setDataSource(dataSourceType.name());
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @After("execution(* com.river.service..*.*(..))")
+    public void after(JoinPoint point){
+        DataSourceContextHolder.clearDataSource();
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+6、数据源类型枚举
+
+package com.river.common;
+
+public interface ContextConst {
+
+    enum DataSourceType{
+        PRIMARY,LOCAL,PROD,TEST
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+7、使用时,通过注解指定数据源
+
+package com.river.service.impl;
+
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.river.annotation.DataSource;
+import com.river.common.ContextConst;
+import com.river.entity.User;
+import com.river.mapper.PrimaryUserMapper;
+import com.river.service.ParmaryUserService;
+import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.List;
+/**
+*
+*当方法上有我们定义的 DataSourceSign 注解时，根据其value动态切换数据源:
+*只需在需要切换数据源的方法上添加@DataSourceSign注解即可，若使用主数据源，不用添加注解。
+*/
+@Service
+public class ParmaryUserServiceImpl extends ServiceImpl<PrimaryUserMapper,User>
+	implements ParmaryUserService{
+
+    @Autowired
+    private PrimaryUserMapper primaryUserMapper;
+
+    @Override
+    public List<User> sellPrimary(){
+       return primaryUserMapper.selectList(null);
+    }
+
+    @DataSourceSign(ContextConst.DataSourceType.PROD)
+    @Override
+    public List<User> sellProd() {
+        return primaryUserMapper.selectList(null);
+    }
+
+    @DataSourceSign(ContextConst.DataSourceType.LOCAL)
+    @Override
+    public List<User> sellLocal() {
+        return primaryUserMapper.selectList(null);
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+8、其他部分代码
+
+model:
+
+@Data
+@TableName("ACT_USER")
+public class User {
+
+    @TableId
+    @TableField
+    private Integer id;
+    @TableField("USERNAME")
+    private String username;
+    @TableField("PASSWORD")
+    private String password;
+    @TableField("ROLE_ID")
+    private Integer roleId;
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+mapper:
+
+package com.river.mapper;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.river.entity.User;
+public interface PrimaryUserMapper extends BaseMapper<User>{
+
+}
+1
+2
+3
+4
+5
+6
+controller:
+
+@RestController
+public class DataController {
+
+    @Autowired
+    private ParmaryUserService parmaryUserService;
+
+    @RequestMapping("login")
+    public List<User> login(Integer type){
+        switch (type){
+            case 1:
+                return parmaryUserService.sellPrimary();
+            case 2:
+                return parmaryUserService.sellProd();
+            default:
+                return parmaryUserService.sellLocal();
+        }
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+入口类:
+
+package com.river;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.BeansException;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+@MapperScan("com.river.mapper")
+//排除DataSource自动配置类,否则会默认自动配置,不会使用我们自定义的DataSource,并且启动报错
+@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+public class GoalintlApplication implements CommandLineRunner,ApplicationContextAware{
+
+    public static void main(String[] args) {
+        SpringApplicationBuilder springApplicationBuilder =
+        	new SpringApplicationBuilder(GoalintlApplication.class);
+        springApplicationBuilder.profiles("dev").logStartupInfo(true).run(args);
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+
+    }
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext)
+    	throws BeansException {
+    }
+}
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+问题：自定义数据源注解与@Transaction同时使用时不生效
+自定义数据源注解与@Transaction注解同一个方法，会先执行@Transaction注解，即获取数据源在切换数据源之前，所以会导致自定义注解失效。
+解决方法：定义切换数据源的注解的AOP切面(DynamicDataSourceAspect )上添加注解【@Order(-1)，ordel的value越小，就越先执行】，保证该AOP在@Transactional之前执行
+
+最后附上pom文件
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.river</groupId>
+    <artifactId>goalintl</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.4.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <!--spring-boot-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--spring-boot-freemarker-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <!---->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatisplus-spring-boot-starter</artifactId>
+            <version>1.0.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+    </dependencies>
+</project>

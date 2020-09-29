@@ -89,8 +89,8 @@ public class TopicReceiver3  {
     	//channel.confirmSelect();
     	//channel.basicQos(1);
        // channel.basicReject(message.getMessageProperties().getDeliveryTag(), true); // 拒绝消息
-         //  channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
-             channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+           channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+         //    channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
 
         // 重新发送消息到队尾
        /* channel.basicPublish(message.getMessageProperties().getReceivedExchange(),
