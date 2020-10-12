@@ -19,4 +19,4 @@ spring:
 management:
   security:
     enabled: false
-tips: 2
+tips: 22

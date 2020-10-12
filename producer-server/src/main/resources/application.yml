@@ -3,20 +3,7 @@ server:
 spring:
   application:
     name: producer-server
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: consumer-server # 配置中心的spring.application.name
-      fail-fast: true # 如果连接配置中心出错,则中断程序
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-    virtual-host: /
-    publisher-confirms: true
-    publisher-returns: true
+
 eureka:
   client:
     serviceUrl:

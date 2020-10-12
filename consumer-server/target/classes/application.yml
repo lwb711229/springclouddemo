@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: https://rdc.hand-china.com/gitlab/15433/config1314.git
-          username: 15s433
-          password: Wangliguo1995
+          uri: https://github.com/lwb711229/springclouddemo.git
+          username: lwb711229
+          password: wander711229
           searchPaths: '{profile}'
