@@ -111,7 +111,7 @@ public class ordercontrol {
         //   surl  = restTemplate.getForObject(surl,String.class);
         System.out.println(surl);
         System.out.println(IPUtil.getIpAdd(request));
-
+       return  restTemplate.getForObject(surl,String.class) ;
     /*    list.forEach((k)->{
             System.out.println("Item : " + k.getUserId());
           dataCache.setValue("key1",k);
@@ -123,6 +123,7 @@ public class ordercontrol {
         MONITORUSER mmm = (MONITORUSER) dataCache.getValue("key1");
         System.out.println(mmm.getUserId());
     */
+/*
 
         redisFacade.setValue("user:"+"a",list,20);
         redisFacade.setValue("user:"+"b","zhangsain",20);
@@ -133,6 +134,7 @@ public class ordercontrol {
         System.out.println(redisFacade.getValue("user:b"));
         System.out.println(redisFacade.getValue("user:a"));
         //  ElasticsearchUtils.createIndex("school");
+*/
 /*
 
         JSONObject student1 = new JSONObject();
@@ -149,14 +151,17 @@ public class ordercontrol {
         JSONObject json = JSONObject.fromObject(stu);
         //2、使用JSONArray
         JSONArray array=JSONArray.fromObject(stu);
-*/
+*//*
 
+
+*/
 /*
         ElasticsearchUtils.addData(student1,"school","student","1111");
         ElasticsearchUtils.addData(student2,"school","student","1112");
         student2.put("date","1996-07-25");
         ElasticsearchUtils.updateDataById(student2,"school","student","1112");
-*/
+*//*
+
         //"  GCX_USER WHERE USER_NAME='"+TellNumber+"'"
         String where = "  GCX_USER WHERE USER_NAME='"+"张三"+"'";
         Map<String, Object> mapuser  = mapUser(where) ;
@@ -166,6 +171,7 @@ public class ordercontrol {
         {
             System.out.println(mapuser.get("USER_ID"));
         }
+*/
 /*
         if( !ElasticsearchUtils.isIndexExist("school")){
             ElasticsearchUtils.createIndex("school");
@@ -176,9 +182,11 @@ public class ordercontrol {
         esPage.getRecordList().forEach((k)->{
             System.out.println( k.toString());
         });
-        */
+        *//*
+
         return  restTemplate.getForObject(surl,String.class) ;
 
+*/
 
 /*
        // return  rst1.getForObject(surl+"/user/"+id,String.class);

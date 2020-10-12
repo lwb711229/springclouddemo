@@ -4,9 +4,9 @@ spring:
   application:
     name: consumer-server
   datasource:
-    url: jdbc:mysql://119.90.51.183:3306/usernew?serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/usermanage?serverTimezone=UTC
     username: root
-    password: isoftadmin
+    password: root
     driver-class-name: com.mysql.jdbc.Driver
   redis:
     database: 0
