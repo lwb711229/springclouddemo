@@ -1,11 +1,11 @@
 spring:
   profiles:
-    active: dev
+    active: bootstrap
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/lwb711229/springclouddemo.git
+          uri: https://github.com/lwb711229/springclouddemo/tree/master/consumer-server/src/main/resources/config
           username: lwb711229
           password: wander711229
           searchPaths: '{profile}'

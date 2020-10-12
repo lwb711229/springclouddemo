@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: bootstrap
   cloud:
     config:
       server:

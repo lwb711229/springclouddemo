@@ -1,0 +1,90 @@
+server:
+  port: 8900
+spring:
+  application:
+    name: consumer-server
+  datasource:
+    url: jdbc:mysql://119.90.51.183:3306/usernew?serverTimezone=UTC
+    username: root
+    password: isoftadmin
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 60s  # 数据库连接超时时间，2.0 中该参数的类型为Duration，这里在配置的时候需要指明单位
+    # 连接池配置，2.0中直接使用jedis或者lettuce配置连接池
+    jedis:
+      pool:
+        # 最大空闲连接数
+        max-idle: 500
+        # 最小空闲连接数
+        min-idle: 50
+        # 等待可用连接的最大时间，负数为不限制
+        max-wait:  -1s
+        # 最大活跃连接数，负数为不限制
+        max-active: -1
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    publisher-confirms: true
+    publisher-returns: true
+    # 设置消费端手动 ack
+    listener:
+      simple:
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+        prefetch: 1
+elasticsearch:
+  hostlist: ${eshostlist:127.0.0.1:9200} #多个结点中间用逗号分隔
+    #     kafka:
+    # 指定kafka 代理地址，可以多个
+    #       bootstrap-servers: YZ-PTEST-APP-HADOOP-02:9092,YZ-PTEST-APP-HADOOP-04:9092
+    # 指定listener 容器中的线程数，用于提高并发量
+    #       listener.concurrency: 3
+    # 每次批量发送消息的数量
+    #       producer.batch-size: 1000
+    # 指定默认消费者group id
+    #       consumer.group-id: myGroup
+    # 指定默认topic id
+#        template.default-topic: topic-1
+mybatis:
+  type-aliases-package: com.gcx.model
+  mapper-locations: classpath:mapper/*.xml
+mapper:
+  mappers: com.gcx.util.MyMapper
+  not-empty: false
+  identity: MYSQL
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+zuul:
+  routes:
+    consumer-server:
+      path: /consumer-server/**
+      serviceId: consumer-server
+      #strip-prefix: false
+      #url: http://localhost:8900/order/12
+  #>>>>>>>>>zuul限流: https://github.com/marcosbarbero/spring-cloud-zuul-ratelimit
+  #某个IP的客户端被限流并不影响其他客户端，即API网关对每个客户端限流是相互独立的
+
+  #config-locations: classpath:mybatis/mybatis-config.xml
+
+
+gcxId: GCXIDdev
