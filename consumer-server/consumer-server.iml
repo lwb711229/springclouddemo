@@ -329,5 +329,7 @@
     <orderEntry type="library" name="Maven: com.googlecode.javaewah:JavaEWAH:1.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jgit:org.eclipse.jgit.http.apache:4.11.0.201803080745-r" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.19" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.squareup.okhttp3:okhttp:3.8.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.squareup.okio:okio:1.13.0" level="project" />
   </component>
 </module>
