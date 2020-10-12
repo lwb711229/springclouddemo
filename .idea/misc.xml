@@ -5,10 +5,31 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="E:/spring-cloud-tutorial-master/pom.xml" />
+        <option value="D:/com-fjsh/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="D:/com-fjsh/com-fjsh-api/com-fjsh-api-activiti/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-api/com-fjsh-api-system/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-api/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-aop/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-core/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-database/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-elasticsearch/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-feign/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-nacos/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-redis/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-redisson/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-security/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/com-fjsh-common-swagger/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-common/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-gateway/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-oauth2/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-resource/com-fjsh-resource-activiti/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-resource/com-fjsh-resource-system/pom.xml" />
+        <option value="D:/com-fjsh/com-fjsh-resource/pom.xml" />
+        <option value="D:/com-fjsh/pom.xml" />
         <option value="E:/spring-cloud-tutorial-master/pom.xml" />
         <option value="E:/spring-cloud-tutorial-master/tutorial-bus/pom.xml" />
         <option value="E:/spring-cloud-tutorial-master/tutorial-bus/tutorial-bus-configcenter/pom.xml" />
@@ -34,7 +55,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

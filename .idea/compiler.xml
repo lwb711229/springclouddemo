@@ -8,13 +8,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="producer-server" />
-        <module name="eureka-server" />
         <module name="uuzl" />
         <module name="consumer-server" />
+        <module name="producer-server" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="com-fjsh" target="1.5" />
+      <module name="com-fjsh-api" target="1.5" />
+      <module name="com-fjsh-api-activiti" target="1.5" />
+      <module name="com-fjsh-api-system" target="1.5" />
+      <module name="com-fjsh-common" target="1.5" />
+      <module name="com-fjsh-common-aop" target="1.5" />
+      <module name="com-fjsh-common-core" target="1.5" />
+      <module name="com-fjsh-common-database" target="1.5" />
+      <module name="com-fjsh-common-elasticsearch" target="1.5" />
+      <module name="com-fjsh-common-feign" target="1.5" />
+      <module name="com-fjsh-common-nacos" target="1.5" />
+      <module name="com-fjsh-common-redis" target="1.5" />
+      <module name="com-fjsh-common-redisson" target="1.5" />
+      <module name="com-fjsh-common-security" target="1.5" />
+      <module name="com-fjsh-common-swagger" target="1.5" />
+      <module name="com-fjsh-gateway" target="1.5" />
+      <module name="com-fjsh-oauth2" target="1.5" />
+      <module name="com-fjsh-resource" target="1.5" />
+      <module name="com-fjsh-resource-activiti" target="1.5" />
+      <module name="com-fjsh-resource-system" target="1.5" />
       <module name="consumer-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="producer-server" target="1.8" />

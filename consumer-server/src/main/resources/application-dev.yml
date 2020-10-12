@@ -30,6 +30,7 @@ spring:
     port: 5672
     username: guest
     password: guest
+    virtual-host: /
     publisher-confirms: true
     publisher-returns: true
     # 设置消费端手动 ack
