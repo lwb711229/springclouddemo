@@ -3,7 +3,7 @@ package com.gcx;
 //import org.mybatis.spring.annotation.MapperScan;
 
 
-import org.springframework.cloud.config.server.EnableConfigServer;
+
 import tk.mybatis.spring.annotation.MapperScan;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -31,7 +31,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableZuulProxy
 
-@EnableConfigServer
+
 
 
 

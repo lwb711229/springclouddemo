@@ -3,13 +3,13 @@ server:
 spring:
   application:
     name: producer-server
-  cloud:
-    config:
-      uri: http://localhost:1000
-      discovery:
-        enabled: true
-        service-id: consumer-server # 配置中心的spring.application.name
-      fail-fast: true # 如果连接配置中心出错,则中断程序
+ # cloud:
+      #   config:
+      #uri: http://localhost:1000
+      #discovery:
+      # enabled: true
+      #service-id: consumer-server # 配置中心的spring.application.name
+    #fail-fast: true # 如果连接配置中心出错,则中断程序
   rabbitmq:
     host: localhost
     port: 5672

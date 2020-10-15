@@ -245,7 +245,7 @@
                         </dependency>
 
 
-        <dependency>
+      <!--  <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
 
@@ -267,7 +267,7 @@
             <artifactId>okhttp</artifactId>
             <version>3.8.0</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
 
     </dependencies>
 

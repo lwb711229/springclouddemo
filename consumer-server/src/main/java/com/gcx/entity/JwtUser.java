@@ -32,7 +32,7 @@ public class JwtUser implements UserDetails {
 
         id = 10;
         username = "admin";
-        password = "$2a$10$AR/jNSqvnJB.CC5Q30VlQ.UrRcebdsXYL9qguCu/SY16n.7Ec8Jl6";
+        password = "$2a$10$IqyhCCvb7Fnp/xFvqEIwZOXA0gFuq5YfE5JE0PEFEtD8vUM7ArlN.";
         //authorities = Collections.singleton(new SimpleGrantedAuthority(user.getRole()));
         String role1="ROLE_USER";
         String role2="ROLE_USER2";

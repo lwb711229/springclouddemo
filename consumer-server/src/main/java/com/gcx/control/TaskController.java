@@ -1,7 +1,12 @@
 package com.gcx.control;
 
 
+import com.gcx.entity.User;
+import com.gcx.support.DataCache;
+import com.gcx.support.Useryzm;
+import com.gcx.support.redis.RedisFacade;
 import com.gcx.utils.JwtTokenUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
@@ -19,20 +24,27 @@ import java.util.List;
 @RequestMapping("/tasks")
 public class TaskController {
 
+    @Autowired
+    private DataCache dataCache;
 
-/*
+    @Autowired
+    Useryzm useryzm;
+    @Autowired
+    RedisFacade redisFacade;
 
-    @PostMapping("/success")
-    public Rest loginSuccess() {
+    @GetMapping("/success")
+    public String loginSuccess(HttpServletRequest request, HttpServletResponse response) {
         // 登录成功后用户的认证信息 UserDetails会存在 安全上下文寄存器 SecurityContextHolder 中
+        Object ob1 = SecurityContextHolder.getContext();
         User principal = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         String username = principal.getUsername();
-        SysUser sysUser = sysUserService.queryByUsername(username);
+        //SysUser sysUser = sysUserService.queryByUsername(username);
         // 脱敏
-        sysUser.setEncodePassword("[PROTECT]");
-        return RestBody.okData(sysUser,"登录成功");
+       // sysUser.setEncodePassword("[PROTECT]");
+       // return RestBody.okData(sysUser,"登录成功");
+        return username;
     }
-*/
+
 
     @GetMapping
     public String listTasks(HttpServletRequest request, HttpServletResponse response){
@@ -99,11 +111,32 @@ public class TaskController {
     @GetMapping("/test4")
 
     public String test4(HttpServletRequest request, HttpServletResponse response){
+        useryzm.setValue("a","dddddd");
+        redisFacade.setValue("user:"+"1","zhangsain1",100);
+        redisFacade.setValue("user:"+"2","zhangsain2",100);
+
+        dataCache.setValue("key","===");
+
         String tokenHeader = request.getHeader(JwtTokenUtils.TOKEN_HEADER);
         String token = tokenHeader.replace(JwtTokenUtils.TOKEN_PREFIX, "");
         String username = JwtTokenUtils.getUsername(token);
         List<GrantedAuthority> role = JwtTokenUtils.getUserRole(token);
         return "任务列表test4"+username+"==="+role.toString();
+
+    }
+
+    @GetMapping("/test5")
+
+    public String test5(HttpServletRequest request, HttpServletResponse response){
+
+        String tokenHeader = request.getHeader(JwtTokenUtils.TOKEN_HEADER);
+        String token = tokenHeader.replace(JwtTokenUtils.TOKEN_PREFIX, "");
+        String username = JwtTokenUtils.getUsername(token);
+        List<GrantedAuthority> role = JwtTokenUtils.getUserRole(token);
+        System.out.println(dataCache.getString("key"));
+        return dataCache.getString("key");
+
+
     }
 
 }
